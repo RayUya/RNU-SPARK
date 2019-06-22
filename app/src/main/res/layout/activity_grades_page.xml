@@ -1,0 +1,3351 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".GradesPage">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:background="@color/purple"
+        android:backgroundTint="@color/purple">
+
+        <FrameLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="17dp"
+            android:background="@drawable/text_view_shape">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/person"/>
+
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nav_header_title"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:text="@string/nas"
+            android:textColor="@color/white"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="30dp"
+            android:textSize="7sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nav_header_subtitle"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="47dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="@string/CGPA"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="75dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/credits"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="75dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="normal"
+            android:textAllCaps="true"
+            android:text="CGPA"
+            android:layout_marginTop="95dp"
+            android:layout_marginStart="130dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="credits"
+            android:textColor="@color/white"
+            android:textStyle="normal"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="95dp"
+            android:textAllCaps="true"/>
+
+
+        <TextView
+            android:layout_width="116.5dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="5dp"
+            android:layout_gravity="bottom|start"
+            android:layout_marginBottom="10dp"
+            android:text="Academic Record"
+            android:textColor="@color/purple"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@drawable/tab_shape"/>
+
+        <TextView
+            android:layout_width="116.5dp"
+            android:layout_height="30dp"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="10dp"
+            android:text="Class Schedule"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@drawable/bg_rounded_input_field"/>
+
+        <TextView
+            android:layout_width="116.5dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="5.5dp"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="10dp"
+            android:text="Carry Overs"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@drawable/bg_rounded_input_field"/>
+
+    </FrameLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@color/purple">
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:text="@string/HLHS"
+            android:textColor="@color/purple"
+            android:textAllCaps="true"
+            android:layout_gravity="start|center"/>
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:background="@drawable/text_view_shape"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/purple"
+            android:text="1.87"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="end|center"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/text_view_shape"
+            android:textColor="@color/purple"
+            android:text="18 credits"/>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="@color/purple">
+    </android.support.v7.widget.CardView>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:elevation="0dp"
+                android:layout_marginTop="15dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_gravity="start|center"
+                    android:src="@drawable/pass"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/purple"
+                    android:text="gst 101(2)"
+                    android:textAllCaps="true"
+
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="50dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:text="@string/GST101"
+                    android:textColor="@color/blue"
+                    android:layout_marginStart="50dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/blue"
+                    android:text="a"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_gravity="end|center"
+                    android:layout_marginEnd="20dp"/>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:elevation="0dp"
+                android:layout_marginTop="15dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_gravity="start|center"
+                    android:src="@drawable/fail"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/purple"
+                    android:text="gst 103(2)"
+                    android:textAllCaps="true"
+
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="50dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:text="@string/GST103"
+                    android:textColor="@color/blue"
+                    android:layout_marginStart="50dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/blue"
+                    android:text="f"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_gravity="end|center"
+                    android:layout_marginEnd="20dp"/>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:elevation="0dp"
+                android:layout_marginTop="15dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_gravity="start|center"
+                    android:src="@drawable/pass"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/purple"
+                    android:text="gst 105(2)"
+                    android:textAllCaps="true"
+
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="50dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:text="@string/GST105"
+                    android:textColor="@color/blue"
+                    android:layout_marginStart="50dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/blue"
+                    android:text="c"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_gravity="end|center"
+                    android:layout_marginEnd="20dp"/>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:elevation="0dp"
+                android:layout_marginTop="15dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_gravity="start|center"
+                    android:src="@drawable/pass"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/purple"
+                    android:text="csc 101(3)"
+                    android:textAllCaps="true"
+
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="50dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:text="@string/CSC101"
+                    android:textColor="@color/blue"
+                    android:layout_marginStart="50dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/blue"
+                    android:text="b"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_gravity="end|center"
+                    android:layout_marginEnd="20dp"/>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:elevation="0dp"
+                android:layout_marginTop="15dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_gravity="start|center"
+                    android:src="@drawable/pass"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/purple"
+                    android:text="phy 101(3)"
+                    android:textAllCaps="true"
+
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="50dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:text="@string/PHY101"
+                    android:textColor="@color/blue"
+                    android:layout_marginStart="50dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/blue"
+                    android:text="d"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_gravity="end|center"
+                    android:layout_marginEnd="20dp"/>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:elevation="0dp"
+                android:layout_marginTop="15dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_gravity="start|center"
+                    android:src="@drawable/pass"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/purple"
+                    android:text="mat 101(3)"
+                    android:textAllCaps="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="50dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:text="@string/MAT101"
+                    android:textColor="@color/blue"
+                    android:layout_marginStart="50dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/blue"
+                    android:text="d"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_gravity="end|center"
+                    android:layout_marginEnd="20dp"/>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_gravity="start|center"
+                    android:src="@drawable/fail"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/purple"
+                    android:text="chm 101(3)"
+                    android:textAllCaps="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="50dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:text="@string/CHM101"
+                    android:textColor="@color/blue"
+                    android:layout_marginStart="50dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/blue"
+                    android:text="f"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_gravity="end|center"
+                    android:layout_marginEnd="20dp"/>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_gravity="start|center"
+                    android:src="@drawable/pass"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/purple"
+                    android:text="bio 101(3)"
+                    android:textAllCaps="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="50dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:text="@string/BIO101"
+                    android:textColor="@color/blue"
+                    android:layout_marginStart="50dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/blue"
+                    android:text="c"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_gravity="end|center"
+                    android:layout_marginEnd="20dp"/>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_gravity="start|center"
+                    android:src="@drawable/pass"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/purple"
+                    android:text="sta 101(2)"
+                    android:textAllCaps="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="50dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:text="@string/STA101"
+                    android:textColor="@color/blue"
+                    android:layout_marginStart="50dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/blue"
+                    android:text="e"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_gravity="end|center"
+                    android:layout_marginEnd="20dp"/>
+
+            </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/purple">
+                </android.support.v7.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:layout_marginStart="10dp"
+                        android:text="@string/HLRS"
+                        android:textColor="@color/purple"
+                        android:textAllCaps="true"
+                        android:layout_gravity="start|center"/>
+
+                    <Button
+                        android:layout_width="40dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/text_view_shape"
+                        android:layout_marginStart="60dp"
+                        android:textColor="@color/purple"
+                        android:text="2.05"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="end|center"
+                        android:layout_marginStart="10dp"
+                        android:background="@drawable/text_view_shape"
+                        android:textColor="@color/purple"
+                        android:text="21 credits"/>
+
+                </LinearLayout>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:backgroundTint="@color/purple">
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_gravity="start|center"
+                        android:src="@drawable/fail"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/purple"
+                        android:text="gst 102(2)"
+                        android:textAllCaps="true"
+
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="50dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
+                        android:text="@string/GST102"
+                        android:textColor="@color/blue"
+                        android:layout_marginStart="50dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/blue"
+                        android:text="f"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_gravity="end|center"
+                        android:layout_marginEnd="20dp"/>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_gravity="start|center"
+                        android:src="@drawable/pass"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/purple"
+                        android:text="gst 104(2)"
+                        android:textAllCaps="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="50dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
+                        android:text="@string/GST104"
+                        android:textColor="@color/blue"
+                        android:layout_marginStart="50dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/blue"
+                        android:text="c"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_gravity="end|center"
+                        android:layout_marginEnd="20dp"/>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_gravity="start|center"
+                        android:src="@drawable/pass"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/purple"
+                        android:text="gst 108(2)"
+                        android:textAllCaps="true"
+
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="50dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
+                        android:text="@string/GST108"
+                        android:textColor="@color/blue"
+                        android:layout_marginStart="50dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/blue"
+                        android:text="c"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_gravity="end|center"
+                        android:layout_marginEnd="20dp"/>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_gravity="start|center"
+                        android:src="@drawable/pass"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/purple"
+                        android:text="csc 102(3)"
+                        android:textAllCaps="true"
+
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="50dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
+                        android:text="@string/CSC102"
+                        android:textColor="@color/blue"
+                        android:layout_marginStart="50dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/blue"
+                        android:text="b"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_gravity="end|center"
+                        android:layout_marginEnd="20dp"/>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_gravity="start|center"
+                        android:src="@drawable/pass"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/purple"
+                        android:text="mat 102(3)"
+                        android:textAllCaps="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="50dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
+                        android:text="@string/MAT102"
+                        android:textColor="@color/blue"
+                        android:layout_marginStart="50dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/blue"
+                        android:text="d"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_gravity="end|center"
+                        android:layout_marginEnd="20dp"/>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_gravity="start|center"
+                        android:src="@drawable/pass"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/purple"
+                        android:text="mat 104(3)"
+                        android:textAllCaps="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="50dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
+                        android:text="@string/MAT104"
+                        android:textColor="@color/blue"
+                        android:layout_marginStart="50dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/blue"
+                        android:text="d"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_gravity="end|center"
+                        android:layout_marginEnd="20dp"/>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_gravity="start|center"
+                        android:src="@drawable/pass"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/purple"
+                        android:text="bio 102(3)"
+                        android:textAllCaps="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="50dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
+                        android:text="@string/BIO102"
+                        android:textColor="@color/blue"
+                        android:layout_marginStart="50dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/blue"
+                        android:text="b"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_gravity="end|center"
+                        android:layout_marginEnd="20dp"/>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_gravity="start|center"
+                        android:src="@drawable/pass"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/purple"
+                        android:text="phy 102(3)"
+                        android:textAllCaps="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="50dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
+                        android:text="@string/PHY102"
+                        android:textColor="@color/blue"
+                        android:layout_marginStart="50dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/blue"
+                        android:text="c"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_gravity="end|center"
+                        android:layout_marginEnd="20dp"/>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_gravity="start|center"
+                        android:src="@drawable/pass"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/purple"
+                        android:text="sta 102(2)"
+                        android:textAllCaps="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="50dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
+                        android:text="@string/STA102"
+                        android:textColor="@color/blue"
+                        android:layout_marginStart="50dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/blue"
+                        android:text="d"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_gravity="end|center"
+                        android:layout_marginEnd="20dp"/>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_marginTop="5dp"
+                    android:backgroundTint="@color/purple">
+                </android.support.v7.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:layout_marginStart="10dp"
+                        android:text="@string/TLHS"
+                        android:textColor="@color/purple"
+                        android:textAllCaps="true"
+                        android:layout_gravity="start|center"/>
+
+                    <Button
+                        android:layout_width="40dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/text_view_shape"
+                        android:layout_marginStart="10dp"
+                        android:textColor="@color/purple"
+                        android:text="2.50"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="end|center"
+                        android:layout_marginStart="10dp"
+                        android:background="@drawable/text_view_shape"
+                        android:textColor="@color/purple"
+                        android:text="16 credits"/>
+
+                </LinearLayout>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:backgroundTint="@color/purple">
+                </android.support.v7.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="15dp">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="20dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_gravity="start|center"
+                            android:src="@drawable/pass"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/purple"
+                            android:text="gst 203(2)"
+                            android:textAllCaps="true"
+
+                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="50dp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textAllCaps="true"
+                            android:text="@string/GST203"
+                            android:textColor="@color/blue"
+                            android:layout_marginStart="50dp"
+                            android:layout_gravity="bottom"
+                            android:layout_marginBottom="5dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/blue"
+                            android:text="a"
+                            android:textAllCaps="true"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
+                            android:layout_gravity="end|center"
+                            android:layout_marginEnd="20dp"/>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="15dp">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="20dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_gravity="start|center"
+                            android:src="@drawable/pass"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/purple"
+                            android:text="gst 205(2)"
+                            android:textAllCaps="true"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="50dp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textAllCaps="true"
+                            android:text="@string/GST205"
+                            android:textColor="@color/blue"
+                            android:layout_marginStart="50dp"
+                            android:layout_gravity="bottom"
+                            android:layout_marginBottom="5dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/blue"
+                            android:text="a"
+                            android:textAllCaps="true"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
+                            android:layout_gravity="end|center"
+                            android:layout_marginEnd="20dp"/>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="15dp">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="20dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_gravity="start|center"
+                            android:src="@drawable/pass"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/purple"
+                            android:text="csc 201(3)"
+                            android:textAllCaps="true"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="50dp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textAllCaps="true"
+                            android:text="@string/CSC201"
+                            android:textColor="@color/blue"
+                            android:layout_marginStart="50dp"
+                            android:layout_gravity="bottom"
+                            android:layout_marginBottom="5dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/blue"
+                            android:text="a"
+                            android:textAllCaps="true"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
+                            android:layout_gravity="end|center"
+                            android:layout_marginEnd="20dp"/>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="15dp">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="20dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_gravity="start|center"
+                            android:src="@drawable/fail"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/purple"
+                            android:text="csc 205(2)"
+                            android:textAllCaps="true"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="50dp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textAllCaps="true"
+                            android:text="@string/CSC205"
+                            android:textColor="@color/blue"
+                            android:layout_marginStart="50dp"
+                            android:layout_gravity="bottom"
+                            android:layout_marginBottom="5dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/blue"
+                            android:text="f"
+                            android:textAllCaps="true"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
+                            android:layout_gravity="end|center"
+                            android:layout_marginEnd="20dp"/>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="15dp">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="20dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_gravity="start|center"
+                            android:src="@drawable/pass"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/purple"
+                            android:text="gst 201(2)"
+                            android:textAllCaps="true"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="50dp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textAllCaps="true"
+                            android:text="@string/GST201"
+                            android:textColor="@color/blue"
+                            android:layout_marginStart="50dp"
+                            android:layout_gravity="bottom"
+                            android:layout_marginBottom="5dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/blue"
+                            android:text="c"
+                            android:textAllCaps="true"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
+                            android:layout_gravity="end|center"
+                            android:layout_marginEnd="20dp"/>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="15dp">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="20dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_gravity="start|center"
+                            android:src="@drawable/pass"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/purple"
+                            android:text="mat 201(3)"
+                            android:textAllCaps="true"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="50dp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textAllCaps="true"
+                            android:text="@string/MAT201"
+                            android:textColor="@color/blue"
+                            android:layout_marginStart="50dp"
+                            android:layout_gravity="bottom"
+                            android:layout_marginBottom="5dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/blue"
+                            android:text="d"
+                            android:textAllCaps="true"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
+                            android:layout_gravity="end|center"
+                            android:layout_marginEnd="20dp"/>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="15dp">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="20dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_gravity="start|center"
+                            android:src="@drawable/pass"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/purple"
+                            android:text="mat 203(2)"
+                            android:textAllCaps="true"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="50dp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textAllCaps="true"
+                            android:text="@string/MAT203"
+                            android:textColor="@color/blue"
+                            android:layout_marginStart="50dp"
+                            android:layout_gravity="bottom"
+                            android:layout_marginBottom="5dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/blue"
+                            android:text="e"
+                            android:textAllCaps="true"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
+                            android:layout_gravity="end|center"
+                            android:layout_marginEnd="20dp"/>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="15dp">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="20dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_gravity="start|center"
+                            android:src="@drawable/fail"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/purple"
+                            android:text="sta 203(2)"
+                            android:textAllCaps="true"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="50dp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textAllCaps="true"
+                            android:text="@string/STA203"
+                            android:textColor="@color/blue"
+                            android:layout_marginStart="50dp"
+                            android:layout_gravity="bottom"
+                            android:layout_marginBottom="5dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/blue"
+                            android:text="d"
+                            android:textAllCaps="true"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
+                            android:layout_gravity="end|center"
+                            android:layout_marginEnd="20dp"/>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="15dp">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="20dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_gravity="start|center"
+                            android:src="@drawable/pass"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/purple"
+                            android:text="phy 201(2)"
+                            android:textAllCaps="true"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="50dp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textAllCaps="true"
+                            android:text="@string/PHY201"
+                            android:textColor="@color/blue"
+                            android:layout_marginStart="50dp"
+                            android:layout_gravity="bottom"
+                            android:layout_marginBottom="5dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/blue"
+                            android:text="d"
+                            android:textAllCaps="true"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
+                            android:layout_gravity="end|center"
+                            android:layout_marginEnd="20dp"/>
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/purple">
+                </android.support.v7.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:layout_marginStart="10dp"
+                        android:text="@string/TLRS"
+                        android:textColor="@color/purple"
+                        android:textAllCaps="true"
+                        android:layout_gravity="start|center"/>
+
+                    <Button
+                        android:layout_width="40dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/text_view_shape"
+                        android:layout_marginStart="60dp"
+                        android:textColor="@color/purple"
+                        android:text="2.97"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="end|center"
+                        android:layout_marginStart="10dp"
+                        android:background="@drawable/text_view_shape"
+                        android:textColor="@color/purple"
+                        android:text="15 credits"/>
+
+                </LinearLayout>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:backgroundTint="@color/purple">
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_gravity="start|center"
+                        android:src="@drawable/pass"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/purple"
+                        android:text="csc 202(3)"
+                        android:textAllCaps="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="50dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
+                        android:text="structured programming"
+                        android:textColor="@color/blue"
+                        android:layout_marginStart="50dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/blue"
+                        android:text="a"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_gravity="end|center"
+                        android:layout_marginEnd="20dp"/>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_gravity="start|center"
+                        android:src="@drawable/pass"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/purple"
+                        android:text="csc 212(2)"
+                        android:textAllCaps="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="50dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
+                        android:text="compuer hardware"
+                        android:textColor="@color/blue"
+                        android:layout_marginStart="50dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/blue"
+                        android:text="a"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_gravity="end|center"
+                        android:layout_marginEnd="20dp"/>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_gravity="start|center"
+                        android:src="@drawable/pass"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/purple"
+                        android:text="csc 204(2)"
+                        android:textAllCaps="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="50dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
+                        android:text="fundamental of data structures"
+                        android:textColor="@color/blue"
+                        android:layout_marginStart="50dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/blue"
+                        android:text="c"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_gravity="end|center"
+                        android:layout_marginEnd="20dp"/>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_gravity="start|center"
+                        android:src="@drawable/pass"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/purple"
+                        android:text="csc 214(2)"
+                        android:textAllCaps="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="50dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
+                        android:text="computer architecture"
+                        android:textColor="@color/blue"
+                        android:layout_marginStart="50dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/blue"
+                        android:text="b"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_gravity="end|center"
+                        android:layout_marginEnd="20dp"/>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_gravity="start|center"
+                        android:src="@drawable/pass"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/purple"
+                        android:text="csc 216(2)"
+                        android:textAllCaps="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="50dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
+                        android:text="data management 2"
+                        android:textColor="@color/blue"
+                        android:layout_marginStart="50dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/blue"
+                        android:text="c"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_gravity="end|center"
+                        android:layout_marginEnd="20dp"/>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_gravity="start|center"
+                        android:src="@drawable/pass"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/purple"
+                        android:text="mat 202(3)"
+                        android:textAllCaps="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="50dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
+                        android:text="elementary differential equation"
+                        android:textColor="@color/blue"
+                        android:layout_marginStart="50dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/blue"
+                        android:text="d"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_gravity="end|center"
+                        android:layout_marginEnd="20dp"/>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_gravity="start|center"
+                        android:src="@drawable/fail"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/purple"
+                        android:text="mat 204(2)"
+                        android:textAllCaps="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="50dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
+                        android:text="linear algebra 2"
+                        android:textColor="@color/blue"
+                        android:layout_marginStart="50dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/blue"
+                        android:text="f"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_gravity="end|center"
+                        android:layout_marginEnd="20dp"/>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_gravity="start|center"
+                        android:src="@drawable/fail"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/purple"
+                        android:text="sta 204(2)"
+                        android:textAllCaps="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="50dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
+                        android:text="statistics for physical sciences 2"
+                        android:textColor="@color/blue"
+                        android:layout_marginStart="50dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/blue"
+                        android:text="f"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_gravity="end|center"
+                        android:layout_marginEnd="20dp"/>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_gravity="start|center"
+                        android:src="@drawable/pass"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/purple"
+                        android:text="gst 204(2)"
+                        android:textAllCaps="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="50dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
+                        android:text="entrepreneurial development 2"
+                        android:textColor="@color/blue"
+                        android:layout_marginStart="50dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/blue"
+                        android:text="a"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_gravity="end|center"
+                        android:layout_marginEnd="20dp"/>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/purple">
+                </android.support.v7.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:layout_marginStart="10dp"
+                        android:text="300l harmattan semester"
+                        android:textColor="@color/purple"
+                        android:textAllCaps="true"
+                        android:layout_gravity="start|center"/>
+
+                    <Button
+                        android:layout_width="40dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/text_view_shape"
+                        android:layout_marginStart="10dp"
+                        android:textColor="@color/purple"
+                        android:text="4.50"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="end|center"
+                        android:layout_marginStart="10dp"
+                        android:background="@drawable/text_view_shape"
+                        android:textColor="@color/purple"
+                        android:text="18 credits"/>
+
+                </LinearLayout>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:backgroundTint="@color/purple">
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_gravity="start|center"
+                        android:src="@drawable/pass"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/purple"
+                        android:text="csc 301(2)"
+                        android:textAllCaps="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="50dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
+                        android:text="assembly language programming"
+                        android:textColor="@color/blue"
+                        android:layout_marginStart="50dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/blue"
+                        android:text="a"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_gravity="end|center"
+                        android:layout_marginEnd="20dp"/>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_gravity="start|center"
+                        android:src="@drawable/pass"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/purple"
+                        android:text="csc 311(3)"
+                        android:textAllCaps="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="50dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
+                        android:text="oop java"
+                        android:textColor="@color/blue"
+                        android:layout_marginStart="50dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/blue"
+                        android:text="a"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_gravity="end|center"
+                        android:layout_marginEnd="20dp"/>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_gravity="start|center"
+                        android:src="@drawable/pass"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/purple"
+                        android:text="csc 305(2)"
+                        android:textAllCaps="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="50dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
+                        android:text="operating systems 2"
+                        android:textColor="@color/blue"
+                        android:layout_marginStart="50dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/blue"
+                        android:text="a"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_gravity="end|center"
+                        android:layout_marginEnd="20dp"/>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_gravity="start|center"
+                        android:src="@drawable/pass"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/purple"
+                        android:text="csc 307(2)"
+                        android:textAllCaps="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="50dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
+                        android:text="data management 2"
+                        android:textColor="@color/blue"
+                        android:layout_marginStart="50dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/blue"
+                        android:text="a"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_gravity="end|center"
+                        android:layout_marginEnd="20dp"/>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_gravity="start|center"
+                        android:src="@drawable/pass"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/purple"
+                        android:text="csc 315(2)"
+                        android:textAllCaps="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="50dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
+                        android:text="computer architecture 2"
+                        android:textColor="@color/blue"
+                        android:layout_marginStart="50dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/blue"
+                        android:text="b"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_gravity="end|center"
+                        android:layout_marginEnd="20dp"/>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_gravity="start|center"
+                        android:src="@drawable/pass"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/purple"
+                        android:text="csc 311(3)"
+                        android:textAllCaps="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="50dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
+                        android:text="system analysis and design"
+                        android:textColor="@color/blue"
+                        android:layout_marginStart="50dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/blue"
+                        android:text="a"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_gravity="end|center"
+                        android:layout_marginEnd="20dp"/>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_gravity="start|center"
+                        android:src="@drawable/pass"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/purple"
+                        android:text="csc 331(2)"
+                        android:textAllCaps="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="50dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
+                        android:text="operations research"
+                        android:textColor="@color/blue"
+                        android:layout_marginStart="50dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/blue"
+                        android:text="b"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_gravity="end|center"
+                        android:layout_marginEnd="20dp"/>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_gravity="start|center"
+                        android:src="@drawable/pass"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/purple"
+                        android:text="csc 303(2)"
+                        android:textAllCaps="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="50dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
+                        android:text="digital computer logic"
+                        android:textColor="@color/blue"
+                        android:layout_marginStart="50dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/blue"
+                        android:text="b"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_gravity="end|center"
+                        android:layout_marginEnd="20dp"/>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/purple">
+                </android.support.v7.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:layout_marginStart="10dp"
+                        android:text="300l rain semester"
+                        android:textColor="@color/purple"
+                        android:textAllCaps="true"
+                        android:layout_gravity="start|center"/>
+
+                    <Button
+                        android:layout_width="40dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/text_view_shape"
+                        android:layout_marginStart="60dp"
+                        android:textColor="@color/purple"
+                        android:text="5.00"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="end|center"
+                        android:layout_marginStart="10dp"
+                        android:background="@drawable/text_view_shape"
+                        android:textColor="@color/purple"
+                        android:text="9 credits"/>
+
+                </LinearLayout>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:backgroundTint="@color/purple">
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_gravity="start|center"
+                        android:src="@drawable/pass"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/purple"
+                        android:text="csc 399(9)"
+                        android:textAllCaps="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="50dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
+                        android:text="industrial training"
+                        android:textColor="@color/blue"
+                        android:layout_marginStart="50dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/blue"
+                        android:text="a"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_gravity="end|center"
+                        android:layout_marginEnd="20dp"/>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/purple">
+                </android.support.v7.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:layout_marginStart="10dp"
+                        android:text="400l harmattan semester"
+                        android:textColor="@color/purple"
+                        android:textAllCaps="true"
+                        android:layout_gravity="start|center"/>
+
+                    <Button
+                        android:layout_width="40dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/text_view_shape"
+                        android:layout_marginStart="10dp"
+                        android:textColor="@color/purple" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="end|center"
+                        android:layout_marginStart="10dp"
+                        android:background="@drawable/text_view_shape"
+                        android:textColor="@color/purple" />
+
+                </LinearLayout>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:backgroundTint="@color/purple">
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_gravity="start|center"
+                        android:src="@drawable/pending"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/purple"
+                        android:text="csc 403(2)"
+                        android:textAllCaps="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="50dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
+                        android:text="software engineering"
+                        android:textColor="@color/blue"
+                        android:layout_marginStart="50dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/blue"
+                        android:text="na"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_gravity="end|center"
+                        android:layout_marginEnd="20dp"/>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_gravity="start|center"
+                        android:src="@drawable/pending"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/purple"
+                        android:text="csc 407(2)"
+                        android:textAllCaps="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="50dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
+                        android:text="networks and communication"
+                        android:textColor="@color/blue"
+                        android:layout_marginStart="50dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/blue"
+                        android:text="na"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_gravity="end|center"
+                        android:layout_marginEnd="20dp"/>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_gravity="start|center"
+                        android:src="@drawable/pending"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/purple"
+                        android:text="csc 415(2)"
+                        android:textAllCaps="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="50dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
+                        android:text="compiler construction 1"
+                        android:textColor="@color/blue"
+                        android:layout_marginStart="50dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/blue"
+                        android:text="na"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_gravity="end|center"
+                        android:layout_marginEnd="20dp"/>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_gravity="start|center"
+                        android:src="@drawable/pending"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/purple"
+                        android:text="csc 405(2)"
+                        android:textAllCaps="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="50dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
+                        android:text="internet programming"
+                        android:textColor="@color/blue"
+                        android:layout_marginStart="50dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/blue"
+                        android:text="na"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_gravity="end|center"
+                        android:layout_marginEnd="20dp"/>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_gravity="start|center"
+                        android:src="@drawable/pending"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/purple"
+                        android:text="csc 409(2)"
+                        android:textAllCaps="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="50dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
+                        android:text="performance and evaluation"
+                        android:textColor="@color/blue"
+                        android:layout_marginStart="50dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/blue"
+                        android:text="na"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_gravity="end|center"
+                        android:layout_marginEnd="20dp"/>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_gravity="start|center"
+                        android:src="@drawable/pending"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/purple"
+                        android:text="csc 417(2)"
+                        android:textAllCaps="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="50dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
+                        android:text="seminar"
+                        android:textColor="@color/blue"
+                        android:layout_marginStart="50dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/blue"
+                        android:text="na"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_gravity="end|center"
+                        android:layout_marginEnd="20dp"/>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_gravity="start|center"
+                        android:src="@drawable/pending"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/purple"
+                        android:text="csc 423(2)"
+                        android:textAllCaps="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="50dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
+                        android:text="project management "
+                        android:textColor="@color/blue"
+                        android:layout_marginStart="50dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/blue"
+                        android:text="na"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_gravity="end|center"
+                        android:layout_marginEnd="20dp"/>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp">
+
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_gravity="start|center"
+                    android:src="@drawable/pending"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/purple"
+                    android:text="csc 435(2)"
+                    android:textAllCaps="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="50dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:text="optimization techniques"
+                    android:textColor="@color/blue"
+                    android:layout_marginStart="50dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/blue"
+                    android:text="na"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_gravity="end|center"
+                    android:layout_marginEnd="20dp"/>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/purple">
+                </android.support.v7.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:layout_marginStart="10dp"
+                        android:text="400l rain semester"
+                        android:textColor="@color/purple"
+                        android:textAllCaps="true"
+                        android:layout_gravity="start|center"/>
+
+                    <Button
+                        android:layout_width="40dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/text_view_shape"
+                        android:layout_marginStart="60dp"
+                        android:textColor="@color/purple" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="end|center"
+                        android:layout_marginStart="10dp"
+                        android:background="@drawable/text_view_shape"
+                        android:textColor="@color/purple" />
+
+                </LinearLayout>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:backgroundTint="@color/purple">
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_gravity="start|center"
+                        android:src="@drawable/pending"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/purple"
+                        android:text="csc 402(2)"
+                        android:textAllCaps="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="50dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
+                        android:text="computer centre management"
+                        android:textColor="@color/blue"
+                        android:layout_marginStart="50dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/blue"
+                        android:text="na"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_gravity="end|center"
+                        android:layout_marginEnd="20dp"/>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_gravity="start|center"
+                        android:src="@drawable/pending"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/purple"
+                        android:text="csc 416(2)"
+                        android:textAllCaps="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="50dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
+                        android:text="compiler construction 2"
+                        android:textColor="@color/blue"
+                        android:layout_marginStart="50dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/blue"
+                        android:text="na"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_gravity="end|center"
+                        android:layout_marginEnd="20dp"/>
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_gravity="start|center"
+                        android:src="@drawable/pending"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/purple"
+                        android:text="csc 482(2)"
+                        android:textAllCaps="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="50dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
+                        android:text="modelling and sumulation"
+                        android:textColor="@color/blue"
+                        android:layout_marginStart="50dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/blue"
+                        android:text="na"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_gravity="end|center"
+                        android:layout_marginEnd="20dp"/>
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_gravity="start|center"
+                        android:src="@drawable/pending"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/purple"
+                        android:text="csc 412(2)"
+                        android:textAllCaps="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="50dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
+                        android:text="artificial intelligence"
+                        android:textColor="@color/blue"
+                        android:layout_marginStart="50dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/blue"
+                        android:text="na"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_gravity="end|center"
+                        android:layout_marginEnd="20dp"/>
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_gravity="start|center"
+                        android:src="@drawable/pending"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/purple"
+                        android:text="csc 499(6)"
+                        android:textAllCaps="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="50dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
+                        android:text="project"
+                        android:textColor="@color/blue"
+                        android:layout_marginStart="50dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/blue"
+                        android:text="na"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_gravity="end|center"
+                        android:layout_marginEnd="20dp"/>
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_gravity="start|center"
+                        android:src="@drawable/pending"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/purple"
+                        android:text="csc 452(2)"
+                        android:textAllCaps="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="50dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
+                        android:text="computer graphics 2"
+                        android:textColor="@color/blue"
+                        android:layout_marginStart="50dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/blue"
+                        android:text="na"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_gravity="end|center"
+                        android:layout_marginEnd="20dp"/>
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_gravity="start|center"
+                        android:src="@drawable/pending"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/purple"
+                        android:text="csc 414(2)"
+                        android:textAllCaps="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="50dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
+                        android:text="installation and maintenance"
+                        android:textColor="@color/blue"
+                        android:layout_marginStart="50dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/blue"
+                        android:text="na"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_gravity="end|center"
+                        android:layout_marginEnd="20dp"/>
+                </android.support.v7.widget.CardView>
+
+
+
+
+
+
+
+            </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+

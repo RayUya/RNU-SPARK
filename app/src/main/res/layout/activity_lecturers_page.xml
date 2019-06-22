@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_background"
+    tools:context=".LecturersPage">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/purple">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/text_view_shape"
+            android:layout_gravity="center|top"
+            android:src="@drawable/person"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="mr. ebuchukwu ani"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Head of Department"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:layout_marginTop="55dp"/>
+
+        <ImageView
+            android:id="@+id/call_hod"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:src="@drawable/call_icon"
+            android:background="@drawable/button_shape_1"
+            android:layout_gravity="start|bottom"
+            android:layout_marginStart="25dp"
+            android:layout_marginBottom="10dp"/>
+
+        <ImageView
+            android:id="@+id/text_hod"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:src="@drawable/message_icon"
+            android:background="@drawable/button_shape_1"
+            android:layout_gravity="end|bottom"
+            android:textColor="@color/purple"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="10dp"/>
+
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_background">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/gradient_background"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:text="1"
+            android:layout_marginStart="10dp"
+            android:gravity="center"
+            android:layout_gravity="start|center"
+            android:textColor="@color/white"
+            android:background="@drawable/button_shape"
+            android:textStyle="bold"/>
+
+        <View
+            android:layout_width="3dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="50dp"
+            android:background="@color/purple">
+        </View>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/prof"
+            android:textAllCaps="true"
+            android:textColor="@color/purple"
+            android:textStyle="bold"
+            android:textSize="10sp"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="prof. okonkwo"
+            android:layout_marginStart="70dp"
+            android:textAllCaps="true"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="end"
+            android:background="@drawable/text_view_shape"
+            android:src="@drawable/person">
+        </ImageView>
+
+        <Button
+            android:id="@+id/call_okonkwo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="@string/call"
+            android:layout_marginStart="65dp"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@drawable/login_page_button"
+            android:textColor="@color/white"
+            android:layout_marginTop="42dp"/>
+
+        <Button
+            android:id="@+id/text_okonkwo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="@string/text"
+            android:layout_marginStart="125dp"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@drawable/login_page_button"
+            android:textColor="@color/white"
+            android:layout_marginTop="42dp"/>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient_background"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:text="2"
+            android:layout_marginStart="10dp"
+            android:gravity="center"
+            android:layout_gravity="start|center"
+            android:textColor="@color/white"
+            android:background="@drawable/button_shape"
+            android:textStyle="bold"/>
+
+        <View
+            android:layout_width="3dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="50dp"
+            android:background="@color/purple">
+        </View>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/phd"
+            android:textAllCaps="true"
+            android:textColor="@color/purple"
+            android:textStyle="bold"
+            android:textSize="10sp"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="mr. tochukwu"
+            android:layout_marginStart="70dp"
+            android:textAllCaps="true"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="end"
+            android:background="@drawable/text_view_shape"
+            android:src="@drawable/person">
+        </ImageView>
+
+        <Button
+            android:id="@+id/call_tochukwu"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="@string/call"
+            android:layout_marginStart="65dp"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@drawable/login_page_button"
+            android:textColor="@color/white"
+            android:layout_marginTop="42dp"/>
+
+        <Button
+            android:id="@+id/text_tochukwu"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="@string/text"
+            android:layout_marginStart="125dp"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@drawable/login_page_button"
+            android:textColor="@color/white"
+            android:layout_marginTop="42dp"/>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient_background"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:text="3"
+            android:layout_marginStart="10dp"
+            android:gravity="center"
+            android:layout_gravity="start|center"
+            android:textColor="@color/white"
+            android:background="@drawable/button_shape"
+            android:textStyle="bold"/>
+
+        <View
+            android:layout_width="3dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="50dp"
+            android:background="@color/purple">
+        </View>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/masters"
+            android:textAllCaps="true"
+            android:textColor="@color/purple"
+            android:textStyle="bold"
+            android:textSize="10sp"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="mr. ifeanyi"
+            android:layout_marginStart="70dp"
+            android:textAllCaps="true"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="end"
+            android:background="@drawable/text_view_shape"
+            android:src="@drawable/person">
+        </ImageView>
+
+        <Button
+            android:id="@+id/call_ifeanyi"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="@string/call"
+            android:layout_marginStart="65dp"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@drawable/login_page_button"
+            android:textColor="@color/white"
+            android:layout_marginTop="42dp"/>
+
+        <Button
+            android:id="@+id/text_ifeanyi"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="@string/text"
+            android:layout_marginStart="125dp"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@drawable/login_page_button"
+            android:textColor="@color/white"
+            android:layout_marginTop="42dp"/>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient_background"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:text="4"
+            android:layout_marginStart="10dp"
+            android:gravity="center"
+            android:layout_gravity="start|center"
+            android:textColor="@color/white"
+            android:background="@drawable/button_shape"
+            android:textStyle="bold"/>
+
+        <View
+            android:layout_width="3dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="50dp"
+            android:background="@color/purple">
+        </View>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/masters"
+            android:textAllCaps="true"
+            android:textColor="@color/purple"
+            android:textStyle="bold"
+            android:textSize="10sp"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="mr. godwin"
+            android:layout_marginStart="70dp"
+            android:textAllCaps="true"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="end"
+            android:background="@drawable/text_view_shape"
+            android:src="@drawable/person">
+        </ImageView>
+
+        <Button
+            android:id="@+id/call_godwin"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="@string/call"
+            android:layout_marginStart="65dp"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@drawable/login_page_button"
+            android:textColor="@color/white"
+            android:layout_marginTop="42dp"/>
+
+        <Button
+            android:id="@+id/text_godwin"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="@string/text"
+            android:layout_marginStart="125dp"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@drawable/login_page_button"
+            android:textColor="@color/white"
+            android:layout_marginTop="42dp"/>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient_background"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:text="5"
+            android:layout_marginStart="10dp"
+            android:gravity="center"
+            android:layout_gravity="start|center"
+            android:textColor="@color/white"
+            android:background="@drawable/button_shape"
+            android:textStyle="bold"/>
+
+        <View
+            android:layout_width="3dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="50dp"
+            android:background="@color/purple">
+        </View>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/corp"
+            android:textAllCaps="true"
+            android:textColor="@color/purple"
+            android:textStyle="bold"
+            android:textSize="10sp"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="mr. frank"
+            android:layout_marginStart="70dp"
+            android:textAllCaps="true"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="end"
+            android:background="@drawable/text_view_shape"
+            android:src="@drawable/person">
+        </ImageView>
+
+        <Button
+            android:id="@+id/call_frank"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="@string/call"
+            android:layout_marginStart="65dp"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@drawable/login_page_button"
+            android:textColor="@color/white"
+            android:layout_marginTop="42dp"/>
+
+        <Button
+            android:id="@+id/text_frank"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="@string/text"
+            android:layout_marginStart="125dp"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@drawable/login_page_button"
+            android:textColor="@color/white"
+            android:layout_marginTop="40dp"/>
+
+    </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>

@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".CalenderPage">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="This Month"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+    <android.support.design.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:cardElevation="0dp"
+        android:backgroundTint="@color/white">
+
+        <android.support.design.circularreveal.CircularRevealFrameLayout
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="start|center"
+            android:backgroundTint="@color/pale_blue"
+            android:background="@drawable/button_shape">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:layout_gravity="center|top"
+                android:textColor="@color/white"
+                android:textSize="40sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="mon"
+                android:layout_marginTop="15dp"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:textColor="@color/white" />
+
+        </android.support.design.circularreveal.CircularRevealFrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Students week starts"
+            android:textStyle="bold"
+            android:layout_gravity="start|top"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(12pm - 6pm)"
+            android:textStyle="bold"
+            android:layout_gravity="start|top"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="35dp" />
+
+    </android.support.design.card.MaterialCardView>
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="42dp"
+                android:background="@color/pale_blue">
+            </View>
+
+
+            <android.support.design.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:backgroundTint="@color/white">
+
+                <android.support.design.circularreveal.CircularRevealFrameLayout
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="start|center"
+                    android:backgroundTint="@color/pale_blue"
+                    android:background="@drawable/button_shape">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="14"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:layout_gravity="center|top"
+                        android:textColor="@color/white"
+                        android:textSize="40sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="sun"
+                        android:layout_marginTop="15dp"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:textColor="@color/white" />
+
+                </android.support.design.circularreveal.CircularRevealFrameLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Students week ends"
+                    android:textStyle="bold"
+                    android:layout_gravity="start|top"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(12pm - 6pm)"
+                    android:textStyle="bold"
+                    android:layout_gravity="start|top"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginTop="35dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/goto_right_icon"
+                    android:layout_gravity="end|center"/>
+
+            </android.support.design.card.MaterialCardView>
+
+            <android.support.design.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                app:cardElevation="0dp"
+                android:backgroundTint="@color/white">
+
+                <android.support.design.circularreveal.CircularRevealFrameLayout
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="start|center"
+                    android:backgroundTint="@color/orange"
+                    android:background="@drawable/button_shape">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="15"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:layout_gravity="center|top"
+                        android:textColor="@color/white"
+                        android:textSize="40sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="mon"
+                        android:layout_marginTop="15dp"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:textColor="@color/white" />
+
+                </android.support.design.circularreveal.CircularRevealFrameLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Project Defense starts"
+                    android:textStyle="bold"
+                    android:layout_gravity="start|top"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Final Year Students"
+                    android:textStyle="bold"
+                    android:layout_gravity="start|top"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginTop="35dp" />
+
+            </android.support.design.card.MaterialCardView>
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="42dp"
+                android:background="@color/orange">
+            </View>
+
+
+            <android.support.design.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:backgroundTint="@color/white">
+
+                <android.support.design.circularreveal.CircularRevealFrameLayout
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="start|center"
+                    android:backgroundTint="@color/orange"
+                    android:background="@drawable/button_shape">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="17"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:layout_gravity="center|top"
+                        android:textColor="@color/white"
+                        android:textSize="40sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="wed"
+                        android:layout_marginTop="15dp"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:textColor="@color/white" />
+
+                </android.support.design.circularreveal.CircularRevealFrameLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Project Defense ends"
+                    android:textStyle="bold"
+                    android:layout_gravity="start|top"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Final Year Students"
+                    android:textStyle="bold"
+                    android:layout_gravity="start|top"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginTop="35dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/goto_right_icon"
+                    android:layout_gravity="end|center"/>
+
+            </android.support.design.card.MaterialCardView>
+
+            <android.support.design.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                app:cardElevation="0dp"
+                android:backgroundTint="@color/white">
+
+                <android.support.design.circularreveal.CircularRevealFrameLayout
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="start|center"
+                    android:backgroundTint="@color/light_purple"
+                    android:background="@drawable/button_shape">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="18"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:layout_gravity="center|top"
+                        android:textColor="@color/white"
+                        android:textSize="40sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="thur"
+                        android:layout_marginTop="15dp"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:textColor="@color/white" />
+
+                </android.support.design.circularreveal.CircularRevealFrameLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Examinations week starts"
+                    android:textStyle="bold"
+                    android:layout_gravity="start|top"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rain Semester"
+                    android:textStyle="bold"
+                    android:layout_gravity="start|top"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginTop="35dp" />
+
+            </android.support.design.card.MaterialCardView>
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="42dp"
+                android:background="@color/light_purple">
+            </View>
+
+            <android.support.design.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:backgroundTint="@color/white">
+
+                <android.support.design.circularreveal.CircularRevealFrameLayout
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="start|center"
+                    android:backgroundTint="@color/light_purple"
+                    android:background="@drawable/button_shape">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="31"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:layout_gravity="center|top"
+                        android:textColor="@color/white"
+                        android:textSize="40sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="wed"
+                        android:layout_marginTop="15dp"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:textColor="@color/white" />
+
+                </android.support.design.circularreveal.CircularRevealFrameLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Examinations week ends"
+                    android:textStyle="bold"
+                    android:layout_gravity="start|top"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rain Semester"
+                    android:textStyle="bold"
+                    android:layout_gravity="start|top"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginTop="35dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/goto_right_icon"
+                    android:layout_gravity="end|center"/>
+
+            </android.support.design.card.MaterialCardView>
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+
+</LinearLayout>

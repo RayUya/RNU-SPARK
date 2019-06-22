@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.itproject">
+
+    <uses-permission android:name="android.permision.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/mimap"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".CalenderPage"></activity>
+        <activity android:name=".FoodMenuPage" />
+        <activity android:name=".SchoolNewsPage" />
+        <activity android:name=".CourseRegistrationPage" />
+        <activity android:name=".ClassSchedulePage" />
+        <activity android:name=".AboutPage" />
+        <activity android:name=".LecturersPage" />
+        <activity android:name=".CoursematesPage" />
+        <activity android:name=".StudentsPage" />
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".GradesPage" />
+        <activity android:name=".PasswordRecovery" />
+        <activity android:name=".Register" />
+        <activity android:name=".LoginActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>
