@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    android:orientation="vertical"
+    tools:context=".CourseRegistrationPage">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textColor="@color/white"
+        android:text="@string/planner"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:backgroundTint="@color/purple"
+        android:background="@drawable/gradient_background" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/white"
+        android:layout_gravity="center"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/text_view_shape">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:background="@color/white"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_course"
+            android:textSize="15sp"
+            android:padding="15dp"
+            android:layout_marginStart="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/purple"/>
+
+        <View
+            android:layout_width="5dp"
+            android:layout_height="50dp"
+            android:textSize="15sp"
+            android:layout_marginStart="20dp"
+            android:layout_gravity="center|top"
+            android:backgroundTint="@color/purple"
+            android:background="@drawable/text_view_shape"/>
+
+
+        <TextView
+            android:id="@+id/schedule_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/show_schedule"
+            android:padding="15dp"
+            android:textSize="15sp"
+            android:layout_marginStart="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/purple"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/dark_grey"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="10dp"
+        android:background="@color/white"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:text="@string/creds_limit"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="90dp"
+                android:layout_height="40dp"
+                android:text="@string/courses"
+                android:textSize="10sp"
+                android:textAllCaps="true" />
+
+            <Button
+                android:layout_width="90dp"
+                android:layout_height="40dp"
+                android:text="@string/start_credits"
+                android:textSize="10sp"
+                android:layout_marginStart="10dp"
+                android:textAllCaps="true" />
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="30dp"
+                android:text="examination"
+                android:textSize="12sp"
+                android:layout_gravity="end"
+                android:layout_marginStart="90dp"
+                android:textColor="@color/purple"
+                android:background="@drawable/text_view_shape"
+                android:textAllCaps="true" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:backgroundTint="@color/grey"
+        android:background="@drawable/text_view_shape">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="start|center"
+                android:src="@drawable/delete_icon"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="@string/csc403"
+                android:paddingTop="5dp"
+                android:textAllCaps="true"
+                android:textColor="@color/purple"
+                android:layout_marginStart="60dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dark_grey"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="20dp"
+                android:paddingTop="5dp"
+                android:text="@string/SE"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dark_grey"
+                android:textAllCaps="true"
+                android:textStyle="normal"
+                android:paddingBottom="5dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="40dp"
+                android:text="@string/godwin"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="start|center"
+                android:src="@drawable/delete_icon"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="@string/csc407"
+                android:paddingTop="5dp"
+                android:textAllCaps="true"
+                android:textColor="@color/purple"
+                android:layout_marginStart="60dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dark_grey"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:paddingTop="5dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/NAC"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dark_grey"
+                android:textAllCaps="true"
+                android:textStyle="normal"
+                android:paddingBottom="5dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="40dp"
+                android:text="@string/tochukwu"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="start|center"
+                android:src="@drawable/delete_icon"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="@string/csc415"
+                android:paddingTop="5dp"
+                android:textAllCaps="true"
+                android:textColor="@color/purple"
+                android:layout_marginStart="60dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dark_grey"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="20dp"
+                android:paddingTop="5dp"
+                android:text="@string/CC"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dark_grey"
+                android:textAllCaps="true"
+                android:textStyle="normal"
+                android:paddingBottom="5dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="40dp"
+                android:text="@string/HOD"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="start|center"
+                android:src="@drawable/delete_icon"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="@string/csc405"
+                android:paddingTop="5dp"
+                android:textAllCaps="true"
+                android:textColor="@color/purple"
+                android:layout_marginStart="60dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dark_grey"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="20dp"
+                android:paddingTop="5dp"
+                android:text="@string/IP"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dark_grey"
+                android:textAllCaps="true"
+                android:textStyle="normal"
+                android:paddingBottom="5dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="40dp"
+                android:text="@string/ifeanyi"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="start|center"
+                android:src="@drawable/delete_icon"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="@string/csc409"
+                android:paddingTop="5dp"
+                android:textAllCaps="true"
+                android:textColor="@color/purple"
+                android:layout_marginStart="60dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dark_grey"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="20dp"
+                android:paddingTop="5dp"
+                android:text="@string/PE"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dark_grey"
+                android:textAllCaps="true"
+                android:textStyle="normal"
+                android:paddingBottom="5dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="40dp"
+                android:text="mr. obodoeze"/>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</LinearLayout>

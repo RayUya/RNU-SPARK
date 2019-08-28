@@ -7,23 +7,23 @@
         <item
             android:id="@+id/nav_grades"
             android:icon="@drawable/grades"
-            android:title="Grades" />
+            android:title="@string/grades" />
         <item
             android:id="@+id/nav_registration"
             android:icon="@drawable/registration"
-            android:title="Course Registration" />
+            android:title="@string/course_registration" />
         <item
             android:id="@+id/nav_schedule"
             android:icon="@drawable/classschedule"
-            android:title="Class Schedule" />
+            android:title="@string/class_schedule" />
         <item
-            android:id="@+id/nav_info"
+            android:id="@+id/nav_events"
             android:icon="@drawable/news"
-            android:title="News/Events" />
+            android:title="@string/events" />
         <item
             android:id="@+id/nav_about"
             android:icon="@drawable/about"
-            android:title="About" />
+            android:title="@string/about" />
     </group>
 
     <item android:title="Communicate">
@@ -31,15 +31,15 @@
             <item
                 android:id="@+id/nav_lecturers"
                 android:icon="@drawable/lecturer"
-                android:title="Lecturers" />
+                android:title="@string/lecturers" />
             <item
                 android:id="@+id/nav_coursemates"
                 android:icon="@drawable/classmates"
-                android:title="Coursemates" />
+                android:title="@string/course_mates" />
             <item
                 android:id="@+id/nav_students"
                 android:icon="@drawable/students"
-                android:title="Students" />
+                android:title="@string/students" />
         </menu>
     </item>
 

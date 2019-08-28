@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/grey"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient_background"
-    android:orientation="vertical"
-    android:layout_gravity="center_vertical"
     tools:context=".Register">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical">
 
     <TextView
         android:layout_width="wrap_content"
@@ -20,7 +24,9 @@
         android:textStyle="bold" />
 
     <EditText
-        android:maxLength="10"
+        android:id="@+id/register_surname_input"
+        android:inputType="textPersonName"
+        android:maxLines="1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
@@ -29,8 +35,9 @@
         android:hint="@string/H1"/>
 
     <EditText
+        android:id="@+id/register_other_names_input"
         android:maxLines="1"
-        android:maxLength="10"
+        android:inputType="textPersonName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
@@ -39,16 +46,8 @@
         android:hint="@string/H2"/>
 
     <EditText
-        android:maxLines="1"
-        android:maxLength="10"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="10dp"
-        android:hint="@string/H3"/>
-
-    <EditText
+        android:id="@+id/register_department_input"
+        android:inputType="textPersonName"
         android:maxLines="1"
         android:maxLength="20"
         android:layout_width="match_parent"
@@ -59,8 +58,10 @@
         android:hint="@string/H4"/>
 
     <EditText
+        android:id="@+id/register_faculty_input"
         android:maxLines="1"
-        android:maxLength="20"
+        android:inputType="textPersonName"
+        android:maxLength="30"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
@@ -69,7 +70,9 @@
         android:hint="@string/H5"/>
 
     <EditText
-        android:maxLength="15"
+        android:id="@+id/register_reg_number_input"
+        android:maxLength="20"
+        android:inputType="textPersonName"
         android:maxLines="1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -78,17 +81,20 @@
         android:layout_marginTop="10dp"
         android:hint="@string/H6"/>
 
-    <EditText
-        android:maxLines="1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="10dp"
-        android:inputType="textPassword"
-        android:hint="@string/H7"/>
+        <EditText
+            android:id="@+id/student_id_input"
+            android:maxLines="1"
+            android:maxLength="6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:inputType="textPersonName"
+            android:hint="@string/H7"/>
 
     <EditText
+        android:id="@+id/register_password_input"
         android:maxLines="1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -105,12 +111,14 @@
         android:layout_marginLeft="100dp"
         android:layout_marginRight="100dp"
         android:text="Submit"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="20dp"
         android:textStyle="bold"
         android:textColor="@color/white"
         android:textAllCaps="true"
         android:background="@drawable/login_page_button"/>
 
 
+    </LinearLayout>
 
 </LinearLayout>

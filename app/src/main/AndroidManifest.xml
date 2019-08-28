@@ -6,11 +6,15 @@
 
     <application
         android:allowBackup="true"
+        android:autoLink="phone"
         android:icon="@mipmap/mimap"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".CalenderPage"></activity>
+        <activity android:name=".EventPage"/>
+        <activity android:name=".SettingsPage" />
+        <activity android:name=".CarryOverPage" />
+        <activity android:name=".CalenderPage" />
         <activity android:name=".FoodMenuPage" />
         <activity android:name=".SchoolNewsPage" />
         <activity android:name=".CourseRegistrationPage" />

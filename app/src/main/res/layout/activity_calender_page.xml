@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textStyle="bold"
-        android:text="This Month"/>
+        android:text="@string/this_month"/>
 
     <ScrollView
         android:layout_width="match_parent"
@@ -25,7 +25,7 @@
             android:layout_marginTop="10dp"
             android:orientation="vertical">
 
-    <android.support.design.card.MaterialCardView
+    <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
@@ -33,7 +33,7 @@
         app:cardElevation="0dp"
         android:backgroundTint="@color/white">
 
-        <android.support.design.circularreveal.CircularRevealFrameLayout
+        <com.google.android.material.circularreveal.CircularRevealFrameLayout
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:layout_gravity="start|center"
@@ -46,21 +46,22 @@
                 android:text="8"
                 android:textAllCaps="true"
                 android:textStyle="bold"
+                android:layout_marginTop="10dp"
                 android:layout_gravity="center|top"
                 android:textColor="@color/white"
-                android:textSize="40sp"/>
+                android:textSize="20sp"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="mon"
+                android:text="@string/monday"
                 android:layout_marginTop="15dp"
                 android:textAllCaps="true"
                 android:textStyle="bold"
                 android:layout_gravity="center"
                 android:textColor="@color/white" />
 
-        </android.support.design.circularreveal.CircularRevealFrameLayout>
+        </com.google.android.material.circularreveal.CircularRevealFrameLayout>
 
         <TextView
             android:layout_width="wrap_content"
@@ -81,24 +82,41 @@
             android:layout_marginStart="80dp"
             android:layout_marginTop="35dp" />
 
-    </android.support.design.card.MaterialCardView>
+    </com.google.android.material.card.MaterialCardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
             <View
                 android:layout_width="5dp"
                 android:layout_height="50dp"
                 android:layout_marginStart="42dp"
+                android:layout_gravity="start"
                 android:background="@color/pale_blue">
             </View>
 
 
-            <android.support.design.card.MaterialCardView
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="250dp"
+                android:src="@drawable/goto_right_icon"
+                android:layout_gravity="end|center"/>
+
+            </LinearLayout>
+
+
+            <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
+                app:cardElevation="0dp"
                 android:backgroundTint="@color/white">
 
-                <android.support.design.circularreveal.CircularRevealFrameLayout
+                <com.google.android.material.circularreveal.CircularRevealFrameLayout
                     android:layout_width="70dp"
                     android:layout_height="70dp"
                     android:layout_gravity="start|center"
@@ -111,21 +129,22 @@
                         android:text="14"
                         android:textAllCaps="true"
                         android:textStyle="bold"
+                        android:layout_marginTop="10dp"
                         android:layout_gravity="center|top"
                         android:textColor="@color/white"
-                        android:textSize="40sp"/>
+                        android:textSize="20sp"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="sun"
+                        android:text="@string/sunday"
                         android:layout_marginTop="15dp"
                         android:textAllCaps="true"
                         android:textStyle="bold"
                         android:layout_gravity="center"
                         android:textColor="@color/white" />
 
-                </android.support.design.circularreveal.CircularRevealFrameLayout>
+                </com.google.android.material.circularreveal.CircularRevealFrameLayout>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -146,15 +165,10 @@
                     android:layout_marginStart="80dp"
                     android:layout_marginTop="35dp" />
 
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/goto_right_icon"
-                    android:layout_gravity="end|center"/>
 
-            </android.support.design.card.MaterialCardView>
+            </com.google.android.material.card.MaterialCardView>
 
-            <android.support.design.card.MaterialCardView
+            <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
@@ -163,7 +177,7 @@
                 app:cardElevation="0dp"
                 android:backgroundTint="@color/white">
 
-                <android.support.design.circularreveal.CircularRevealFrameLayout
+                <com.google.android.material.circularreveal.CircularRevealFrameLayout
                     android:layout_width="70dp"
                     android:layout_height="70dp"
                     android:layout_gravity="start|center"
@@ -175,22 +189,23 @@
                         android:layout_height="wrap_content"
                         android:text="15"
                         android:textAllCaps="true"
+                        android:layout_marginTop="10dp"
                         android:textStyle="bold"
                         android:layout_gravity="center|top"
                         android:textColor="@color/white"
-                        android:textSize="40sp"/>
+                        android:textSize="20sp"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="mon"
+                        android:text="@string/monday"
                         android:layout_marginTop="15dp"
                         android:textAllCaps="true"
                         android:textStyle="bold"
                         android:layout_gravity="center"
                         android:textColor="@color/white" />
 
-                </android.support.design.circularreveal.CircularRevealFrameLayout>
+                </com.google.android.material.circularreveal.CircularRevealFrameLayout>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -211,7 +226,12 @@
                     android:layout_marginStart="80dp"
                     android:layout_marginTop="35dp" />
 
-            </android.support.design.card.MaterialCardView>
+            </com.google.android.material.card.MaterialCardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
             <View
                 android:layout_width="5dp"
@@ -221,14 +241,25 @@
             </View>
 
 
-            <android.support.design.card.MaterialCardView
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="250dp"
+                android:src="@drawable/goto_right_icon"
+                android:layout_gravity="end|center"/>
+
+            </LinearLayout>
+
+
+            <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
+                app:cardElevation="0dp"
                 android:backgroundTint="@color/white">
 
-                <android.support.design.circularreveal.CircularRevealFrameLayout
+                <com.google.android.material.circularreveal.CircularRevealFrameLayout
                     android:layout_width="70dp"
                     android:layout_height="70dp"
                     android:layout_gravity="start|center"
@@ -239,23 +270,24 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="17"
+                        android:layout_marginTop="10dp"
                         android:textAllCaps="true"
                         android:textStyle="bold"
                         android:layout_gravity="center|top"
                         android:textColor="@color/white"
-                        android:textSize="40sp"/>
+                        android:textSize="20sp"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="wed"
+                        android:text="@string/wednesday"
                         android:layout_marginTop="15dp"
                         android:textAllCaps="true"
                         android:textStyle="bold"
                         android:layout_gravity="center"
                         android:textColor="@color/white" />
 
-                </android.support.design.circularreveal.CircularRevealFrameLayout>
+                </com.google.android.material.circularreveal.CircularRevealFrameLayout>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -276,15 +308,10 @@
                     android:layout_marginStart="80dp"
                     android:layout_marginTop="35dp" />
 
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/goto_right_icon"
-                    android:layout_gravity="end|center"/>
 
-            </android.support.design.card.MaterialCardView>
+            </com.google.android.material.card.MaterialCardView>
 
-            <android.support.design.card.MaterialCardView
+            <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
@@ -293,7 +320,7 @@
                 app:cardElevation="0dp"
                 android:backgroundTint="@color/white">
 
-                <android.support.design.circularreveal.CircularRevealFrameLayout
+                <com.google.android.material.circularreveal.CircularRevealFrameLayout
                     android:layout_width="70dp"
                     android:layout_height="70dp"
                     android:layout_gravity="start|center"
@@ -305,22 +332,23 @@
                         android:layout_height="wrap_content"
                         android:text="18"
                         android:textAllCaps="true"
+                        android:layout_marginTop="10dp"
                         android:textStyle="bold"
                         android:layout_gravity="center|top"
                         android:textColor="@color/white"
-                        android:textSize="40sp"/>
+                        android:textSize="20sp"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="thur"
+                        android:text="@string/thursday"
                         android:layout_marginTop="15dp"
                         android:textAllCaps="true"
                         android:textStyle="bold"
                         android:layout_gravity="center"
                         android:textColor="@color/white" />
 
-                </android.support.design.circularreveal.CircularRevealFrameLayout>
+                </com.google.android.material.circularreveal.CircularRevealFrameLayout>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -341,7 +369,12 @@
                     android:layout_marginStart="80dp"
                     android:layout_marginTop="35dp" />
 
-            </android.support.design.card.MaterialCardView>
+            </com.google.android.material.card.MaterialCardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
             <View
                 android:layout_width="5dp"
@@ -350,14 +383,24 @@
                 android:background="@color/light_purple">
             </View>
 
-            <android.support.design.card.MaterialCardView
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="250dp"
+                    android:src="@drawable/goto_right_icon"
+                    android:layout_gravity="end|center"/>
+
+            </LinearLayout>
+
+            <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
+                app:cardElevation="0dp"
                 android:backgroundTint="@color/white">
 
-                <android.support.design.circularreveal.CircularRevealFrameLayout
+                <com.google.android.material.circularreveal.CircularRevealFrameLayout
                     android:layout_width="70dp"
                     android:layout_height="70dp"
                     android:layout_gravity="start|center"
@@ -370,21 +413,22 @@
                         android:text="31"
                         android:textAllCaps="true"
                         android:textStyle="bold"
+                        android:layout_marginTop="10dp"
                         android:layout_gravity="center|top"
                         android:textColor="@color/white"
-                        android:textSize="40sp"/>
+                        android:textSize="20sp"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="wed"
+                        android:text="@string/wednesday"
                         android:layout_marginTop="15dp"
                         android:textAllCaps="true"
                         android:textStyle="bold"
                         android:layout_gravity="center"
                         android:textColor="@color/white" />
 
-                </android.support.design.circularreveal.CircularRevealFrameLayout>
+                </com.google.android.material.circularreveal.CircularRevealFrameLayout>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -405,13 +449,7 @@
                     android:layout_marginStart="80dp"
                     android:layout_marginTop="35dp" />
 
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/goto_right_icon"
-                    android:layout_gravity="end|center"/>
-
-            </android.support.design.card.MaterialCardView>
+            </com.google.android.material.card.MaterialCardView>
 
         </LinearLayout>
 

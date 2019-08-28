@@ -2,27 +2,33 @@ package com.example.itproject;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.snackbar.Snackbar;
+import androidx.appcompat.app.ActionBar;
 import android.view.View;
-import android.support.design.widget.NavigationView;
-import android.support.v4.view.GravityCompat;
-import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBarDrawerToggle;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
+import com.google.android.material.navigation.NavigationView;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.EditText;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
 // Landing Page Linear Layout ID's
     LinearLayout lay_time_table;
     LinearLayout lay_lecturers;
     LinearLayout lay_news;
     LinearLayout lay_caf;
     LinearLayout lay_calender;
+    EditText Reg_number;
+    TextView Label_name;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +42,9 @@ public class MainActivity extends AppCompatActivity
         lay_news = findViewById(R.id.news_btn);
         lay_caf = findViewById(R.id.caf_btn);
         lay_calender = findViewById(R.id.calendar_btn);
+
+        // Reg_number = findViewById(R.id.reg_edit_text_field);
+
 
         // Starts the page Time Table and Class Schedule
         lay_time_table.setOnClickListener(new View.OnClickListener() {
@@ -110,7 +119,8 @@ public class MainActivity extends AppCompatActivity
     }
 
 
-    @SuppressWarnings("StatementWithEmptyBody")
+
+    @SuppressWarnings("Top Navigation Menu Items")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
@@ -119,17 +129,17 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.action_settings) {
-            return true;
+
         }
      /*Navigates all menu items to different activities*/
-        if (id == R.id.nav_grades) {
+          if (id == R.id.nav_grades) {
             // Handle the grades page
 
             Intent intent = new Intent(MainActivity.this, GradesPage.class);
             this.startActivity(intent);
 
         } else if (id == R.id.nav_registration) {
-            //  Handle the courses to register
+            //  Handle the courses to be registered
 
             Intent intent = new Intent(MainActivity.this,CourseRegistrationPage.class);
             this.startActivity(intent);
@@ -140,15 +150,11 @@ public class MainActivity extends AppCompatActivity
             Intent intent = new Intent(MainActivity.this, ClassSchedulePage.class);
             this.startActivity(intent);
 
-
-
-        } else if (id == R.id.nav_info) {
+        } else if (id == R.id.nav_events) {
             // Handles events and news
 
-
-            Intent intent = new Intent(MainActivity.this, SchoolNewsPage.class);
+            Intent intent = new Intent(MainActivity.this, EventPage.class);
             this.startActivity(intent);
-
 
         } else if (id == R.id.nav_about) {
             // Handles information about the school
@@ -156,20 +162,17 @@ public class MainActivity extends AppCompatActivity
             Intent intent = new Intent(MainActivity.this, AboutPage.class);
             this.startActivity(intent);
 
-
         } else if (id == R.id.nav_lecturers) {
             // Handles lecturers information
 
             Intent intent = new Intent(MainActivity.this, LecturersPage.class);
             this.startActivity(intent);
 
-
         } else if (id == R.id.nav_coursemates) {
             // Handles course mates information
 
             Intent intent = new Intent(MainActivity.this, CoursematesPage.class);
             this.startActivity(intent);
-
 
         } else if (id == R.id.nav_students) {
             // Handles all students information
@@ -187,7 +190,20 @@ public class MainActivity extends AppCompatActivity
    @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 
-       switch (item.getItemId()) {
+     int id = item.getItemId();
+
+       if (id == R.id.action_settings) {
+
+           startActivity(new Intent(MainActivity.this, SettingsPage.class));
+
+       }
+
+        switch (item.getItemId()) {
+
+
+           case R.id.action_settings:
+
+               break;
            case R.id.nav_grades:
 
                break;
@@ -197,7 +213,7 @@ public class MainActivity extends AppCompatActivity
            case R.id.nav_schedule:
 
                break;
-           case R.id.nav_info:
+           case R.id.nav_events:
 
                break;
            case R.id.nav_about:

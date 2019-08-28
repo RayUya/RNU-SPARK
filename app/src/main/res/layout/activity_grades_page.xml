@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:background="@color/white"
     tools:context=".GradesPage">
@@ -25,7 +26,9 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@drawable/person"/>
+                android:contentDescription="@string/image"
+                android:background="@drawable/bg_rounded_input_field"
+                android:src="@drawable/student"/>
 
         </FrameLayout>
 
@@ -42,11 +45,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textStyle="normal"
-            android:text="@string/nas"
+            android:text="@string/label_name"
             android:textColor="@color/white"
             android:layout_marginStart="130dp"
-            android:layout_marginTop="30dp"
-            android:textSize="7sp"/>
+            android:layout_marginTop="35dp"
+            android:textSize="8sp"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -98,39 +101,41 @@
 
 
         <TextView
-            android:layout_width="116.5dp"
+            android:layout_width="135dp"
             android:layout_height="30dp"
             android:layout_marginStart="5dp"
             android:layout_gravity="bottom|start"
             android:layout_marginBottom="10dp"
-            android:text="Academic Record"
+            android:text="@string/tab_text_1"
             android:textColor="@color/purple"
-            android:textSize="10sp"
+            android:textSize="12sp"
             android:textStyle="bold"
             android:gravity="center"
             android:background="@drawable/tab_shape"/>
 
         <TextView
-            android:layout_width="116.5dp"
+            android:id="@+id/class_schedule_btn"
+            android:layout_width="135dp"
             android:layout_height="30dp"
             android:layout_gravity="bottom|center"
             android:layout_marginBottom="10dp"
-            android:text="Class Schedule"
+            android:text="@string/tab_text_2"
             android:textColor="@color/white"
-            android:textSize="10sp"
+            android:textSize="12sp"
             android:textStyle="bold"
             android:gravity="center"
             android:background="@drawable/bg_rounded_input_field"/>
 
         <TextView
-            android:layout_width="116.5dp"
+            android:id="@+id/Carry_over_btn"
+            android:layout_width="135dp"
             android:layout_height="30dp"
-            android:layout_marginEnd="5.5dp"
+            android:layout_marginEnd="5dp"
             android:layout_gravity="bottom|end"
             android:layout_marginBottom="10dp"
-            android:text="Carry Overs"
+            android:text="@string/tab_text_3"
             android:textColor="@color/white"
-            android:textSize="10sp"
+            android:textSize="12sp"
             android:textStyle="bold"
             android:gravity="center"
             android:background="@drawable/bg_rounded_input_field"/>
@@ -146,12 +151,12 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="3dp"
         android:layout_marginTop="5dp"
         android:backgroundTint="@color/purple">
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -163,6 +168,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textStyle="bold"
+            android:textSize="12sp"
             android:layout_marginStart="10dp"
             android:text="@string/HLHS"
             android:textColor="@color/purple"
@@ -174,7 +180,8 @@
             android:layout_height="30dp"
             android:layout_gravity="center"
             android:background="@drawable/text_view_shape"
-            android:layout_marginStart="10dp"
+            android:layout_marginStart="80dp"
+            android:textSize="12sp"
             android:textColor="@color/purple"
             android:text="1.87"/>
 
@@ -183,458 +190,477 @@
             android:layout_height="30dp"
             android:layout_gravity="end|center"
             android:layout_marginStart="10dp"
+            android:textSize="12sp"
             android:background="@drawable/text_view_shape"
             android:textColor="@color/purple"
             android:text="18 credits"/>
 
     </LinearLayout>
 
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="3dp"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
         android:backgroundTint="@color/purple">
-    </android.support.v7.widget.CardView>
-        
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-            
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:elevation="0dp"
-                android:layout_marginTop="15dp">
+    </androidx.cardview.widget.CardView>
 
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="20dp"
-                    android:layout_marginStart="20dp"
-                    android:layout_gravity="start|center"
-                    android:src="@drawable/pass"/>
-
-                <TextView
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/purple"
-                    android:text="gst 101(2)"
-                    android:textAllCaps="true"
+                    android:orientation="vertical">
 
-                    android:layout_marginTop="5dp"
-                    android:layout_marginStart="50dp"
-                    android:textStyle="bold"/>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="15dp"
+                        app:cardElevation="0dp">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textStyle="bold"
-                    android:textAllCaps="true"
-                    android:text="@string/GST101"
-                    android:textColor="@color/blue"
-                    android:layout_marginStart="50dp"
-                    android:layout_gravity="bottom"
-                    android:layout_marginBottom="5dp"/>
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="20dp"
+                            android:contentDescription="@string/image"
+                            android:layout_gravity="start|center"
+                            android:layout_marginStart="20dp"
+                            android:src="@drawable/pass" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/blue"
-                    android:text="a"
-                    android:textAllCaps="true"
-                    android:textStyle="bold"
-                    android:textSize="20sp"
-                    android:layout_gravity="end|center"
-                    android:layout_marginEnd="20dp"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="50dp"
+                            android:layout_marginTop="5dp"
+                            android:text="gst 101 (2)"
+                            android:textAllCaps="true"
+                            android:textColor="@color/purple"
+                            android:textStyle="bold" />
 
-            </android.support.v7.widget.CardView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginStart="50dp"
+                            android:layout_marginBottom="5dp"
+                            android:text="@string/GST101"
+                            android:textAllCaps="true"
+                            android:textSize="12sp"
+                            android:textColor="@color/blue"
+                            android:textStyle="bold" />
 
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:elevation="0dp"
-                android:layout_marginTop="15dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end|center"
+                            android:layout_marginEnd="20dp"
+                            android:text="a"
+                            android:textAllCaps="true"
+                            android:textColor="@color/blue"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
 
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="20dp"
-                    android:layout_marginStart="20dp"
-                    android:layout_gravity="start|center"
-                    android:src="@drawable/fail"/>
+                    </androidx.cardview.widget.CardView>
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/purple"
-                    android:text="gst 103(2)"
-                    android:textAllCaps="true"
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="15dp"
+                        app:cardElevation="0dp">
 
-                    android:layout_marginTop="5dp"
-                    android:layout_marginStart="50dp"
-                    android:textStyle="bold"/>
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="20dp"
+                            android:contentDescription="@string/image"
+                            android:layout_gravity="start|center"
+                            android:layout_marginStart="20dp"
+                            android:src="@drawable/fail" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textStyle="bold"
-                    android:textAllCaps="true"
-                    android:text="@string/GST103"
-                    android:textColor="@color/blue"
-                    android:layout_marginStart="50dp"
-                    android:layout_gravity="bottom"
-                    android:layout_marginBottom="5dp"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="50dp"
+                            android:layout_marginTop="5dp"
+                            android:contentDescription="@string/image"
+                            android:text="gst 103 (2)"
+                            android:textAllCaps="true"
+                            android:textColor="@color/purple"
+                            android:textStyle="bold" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/blue"
-                    android:text="f"
-                    android:textAllCaps="true"
-                    android:textStyle="bold"
-                    android:textSize="20sp"
-                    android:layout_gravity="end|center"
-                    android:layout_marginEnd="20dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginStart="50dp"
+                            android:layout_marginBottom="5dp"
+                            android:textSize="12sp"
+                            android:text="@string/GST103"
+                            android:textAllCaps="true"
+                            android:textColor="@color/blue"
+                            android:textStyle="bold" />
 
-            </android.support.v7.widget.CardView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end|center"
+                            android:layout_marginEnd="20dp"
+                            android:text="f"
+                            android:textAllCaps="true"
+                            android:textColor="@color/blue"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
 
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:elevation="0dp"
-                android:layout_marginTop="15dp">
+                    </androidx.cardview.widget.CardView>
 
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="20dp"
-                    android:layout_marginStart="20dp"
-                    android:layout_gravity="start|center"
-                    android:src="@drawable/pass"/>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="15dp"
+                        app:cardElevation="0dp">
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/purple"
-                    android:text="gst 105(2)"
-                    android:textAllCaps="true"
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="20dp"
+                            android:contentDescription="@string/image"
+                            android:layout_gravity="start|center"
+                            android:layout_marginStart="20dp"
+                            android:src="@drawable/pass" />
 
-                    android:layout_marginTop="5dp"
-                    android:layout_marginStart="50dp"
-                    android:textStyle="bold"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="50dp"
+                            android:layout_marginTop="5dp"
+                            android:text="gst 105 (2)"
+                            android:textAllCaps="true"
+                            android:textColor="@color/purple"
+                            android:textStyle="bold" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textStyle="bold"
-                    android:textAllCaps="true"
-                    android:text="@string/GST105"
-                    android:textColor="@color/blue"
-                    android:layout_marginStart="50dp"
-                    android:layout_gravity="bottom"
-                    android:layout_marginBottom="5dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginStart="50dp"
+                            android:layout_marginBottom="5dp"
+                            android:textSize="12sp"
+                            android:text="@string/GST105"
+                            android:textAllCaps="true"
+                            android:textColor="@color/blue"
+                            android:textStyle="bold" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/blue"
-                    android:text="c"
-                    android:textAllCaps="true"
-                    android:textStyle="bold"
-                    android:textSize="20sp"
-                    android:layout_gravity="end|center"
-                    android:layout_marginEnd="20dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end|center"
+                            android:layout_marginEnd="20dp"
+                            android:text="c"
+                            android:textAllCaps="true"
+                            android:textColor="@color/blue"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
 
-            </android.support.v7.widget.CardView>
+                    </androidx.cardview.widget.CardView>
 
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:elevation="0dp"
-                android:layout_marginTop="15dp">
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="15dp"
+                        app:cardElevation="0dp">
 
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="20dp"
-                    android:layout_marginStart="20dp"
-                    android:layout_gravity="start|center"
-                    android:src="@drawable/pass"/>
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="start|center"
+                            android:layout_marginStart="20dp"
+                            android:contentDescription="@string/image"
+                            android:src="@drawable/pass" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/purple"
-                    android:text="csc 101(3)"
-                    android:textAllCaps="true"
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="50dp"
+                            android:layout_marginTop="5dp"
+                            android:text="csc 101 (3)"
 
-                    android:layout_marginTop="5dp"
-                    android:layout_marginStart="50dp"
-                    android:textStyle="bold"/>
+                            android:textAllCaps="true"
+                            android:textColor="@color/purple"
+                            android:textStyle="bold" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textStyle="bold"
-                    android:textAllCaps="true"
-                    android:text="@string/CSC101"
-                    android:textColor="@color/blue"
-                    android:layout_marginStart="50dp"
-                    android:layout_gravity="bottom"
-                    android:layout_marginBottom="5dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginStart="50dp"
+                            android:layout_marginBottom="5dp"
+                            android:textSize="12sp"
+                            android:text="@string/CSC101"
+                            android:textAllCaps="true"
+                            android:textColor="@color/blue"
+                            android:textStyle="bold" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/blue"
-                    android:text="b"
-                    android:textAllCaps="true"
-                    android:textStyle="bold"
-                    android:textSize="20sp"
-                    android:layout_gravity="end|center"
-                    android:layout_marginEnd="20dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end|center"
+                            android:layout_marginEnd="20dp"
+                            android:text="b"
+                            android:textAllCaps="true"
+                            android:textColor="@color/blue"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
 
-            </android.support.v7.widget.CardView>
+                    </androidx.cardview.widget.CardView>
 
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:elevation="0dp"
-                android:layout_marginTop="15dp">
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="15dp"
+                        app:cardElevation="0dp">
 
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="20dp"
-                    android:layout_marginStart="20dp"
-                    android:layout_gravity="start|center"
-                    android:src="@drawable/pass"/>
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="start|center"
+                            android:layout_marginStart="20dp"
+                            android:contentDescription="@string/image"
+                            android:src="@drawable/pass" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/purple"
-                    android:text="phy 101(3)"
-                    android:textAllCaps="true"
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="50dp"
+                            android:layout_marginTop="5dp"
+                            android:text="phy 101 (3)"
+                            android:textAllCaps="true"
+                            android:textColor="@color/purple"
+                            android:textStyle="bold" />
 
-                    android:layout_marginTop="5dp"
-                    android:layout_marginStart="50dp"
-                    android:textStyle="bold"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginStart="50dp"
+                            android:layout_marginBottom="5dp"
+                            android:textSize="12sp"
+                            android:text="@string/PHY101"
+                            android:textAllCaps="true"
+                            android:textColor="@color/blue"
+                            android:textStyle="bold" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textStyle="bold"
-                    android:textAllCaps="true"
-                    android:text="@string/PHY101"
-                    android:textColor="@color/blue"
-                    android:layout_marginStart="50dp"
-                    android:layout_gravity="bottom"
-                    android:layout_marginBottom="5dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end|center"
+                            android:layout_marginEnd="20dp"
+                            android:text="d"
+                            android:textAllCaps="true"
+                            android:textColor="@color/blue"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/blue"
-                    android:text="d"
-                    android:textAllCaps="true"
-                    android:textStyle="bold"
-                    android:textSize="20sp"
-                    android:layout_gravity="end|center"
-                    android:layout_marginEnd="20dp"/>
+                    </androidx.cardview.widget.CardView>
 
-            </android.support.v7.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="15dp"
+                        app:cardElevation="0dp">
 
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:elevation="0dp"
-                android:layout_marginTop="15dp">
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="20dp"
+                            android:contentDescription="@string/image"
+                            android:layout_gravity="start|center"
+                            android:layout_marginStart="20dp"
+                            android:src="@drawable/pass" />
 
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="20dp"
-                    android:layout_marginStart="20dp"
-                    android:layout_gravity="start|center"
-                    android:src="@drawable/pass"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="50dp"
+                            android:layout_marginTop="5dp"
+                            android:text="mat 101 (3)"
+                            android:textAllCaps="true"
+                            android:textColor="@color/purple"
+                            android:textStyle="bold" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/purple"
-                    android:text="mat 101(3)"
-                    android:textAllCaps="true"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginStart="50dp"
-                    android:textStyle="bold"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginStart="50dp"
+                            android:layout_marginBottom="5dp"
+                            android:textSize="12sp"
+                            android:text="@string/MAT101"
+                            android:textAllCaps="true"
+                            android:textColor="@color/blue"
+                            android:textStyle="bold" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textStyle="bold"
-                    android:textAllCaps="true"
-                    android:text="@string/MAT101"
-                    android:textColor="@color/blue"
-                    android:layout_marginStart="50dp"
-                    android:layout_gravity="bottom"
-                    android:layout_marginBottom="5dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end|center"
+                            android:layout_marginEnd="20dp"
+                            android:text="d"
+                            android:textAllCaps="true"
+                            android:textColor="@color/blue"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/blue"
-                    android:text="d"
-                    android:textAllCaps="true"
-                    android:textStyle="bold"
-                    android:textSize="20sp"
-                    android:layout_gravity="end|center"
-                    android:layout_marginEnd="20dp"/>
+                    </androidx.cardview.widget.CardView>
 
-            </android.support.v7.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        app:cardElevation="0dp"
+                        android:layout_marginTop="15dp">
 
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginTop="15dp">
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="20dp"
+                            android:contentDescription="@string/image"
+                            android:layout_gravity="start|center"
+                            android:layout_marginStart="20dp"
+                            android:src="@drawable/fail" />
 
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="20dp"
-                    android:layout_marginStart="20dp"
-                    android:layout_gravity="start|center"
-                    android:src="@drawable/fail"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="50dp"
+                            android:layout_marginTop="5dp"
+                            android:text="chm 101 (3)"
+                            android:textAllCaps="true"
+                            android:textColor="@color/purple"
+                            android:textStyle="bold" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/purple"
-                    android:text="chm 101(3)"
-                    android:textAllCaps="true"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginStart="50dp"
-                    android:textStyle="bold"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginStart="50dp"
+                            android:layout_marginBottom="5dp"
+                            android:textSize="12sp"
+                            android:text="@string/CHM101"
+                            android:textAllCaps="true"
+                            android:textColor="@color/blue"
+                            android:textStyle="bold" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textStyle="bold"
-                    android:textAllCaps="true"
-                    android:text="@string/CHM101"
-                    android:textColor="@color/blue"
-                    android:layout_marginStart="50dp"
-                    android:layout_gravity="bottom"
-                    android:layout_marginBottom="5dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end|center"
+                            android:layout_marginEnd="20dp"
+                            android:text="f"
+                            android:textAllCaps="true"
+                            android:textColor="@color/blue"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/blue"
-                    android:text="f"
-                    android:textAllCaps="true"
-                    android:textStyle="bold"
-                    android:textSize="20sp"
-                    android:layout_gravity="end|center"
-                    android:layout_marginEnd="20dp"/>
+                    </androidx.cardview.widget.CardView>
 
-            </android.support.v7.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        app:cardElevation="0dp"
+                        android:layout_marginTop="15dp">
 
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginTop="15dp">
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="20dp"
+                            android:contentDescription="@string/image"
+                            android:layout_gravity="start|center"
+                            android:layout_marginStart="20dp"
+                            android:src="@drawable/pass" />
 
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="20dp"
-                    android:layout_marginStart="20dp"
-                    android:layout_gravity="start|center"
-                    android:src="@drawable/pass"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="50dp"
+                            android:layout_marginTop="5dp"
+                            android:text="bio 101 (3)"
+                            android:textAllCaps="true"
+                            android:textColor="@color/purple"
+                            android:textStyle="bold" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/purple"
-                    android:text="bio 101(3)"
-                    android:textAllCaps="true"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginStart="50dp"
-                    android:textStyle="bold"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginStart="50dp"
+                            android:layout_marginBottom="5dp"
+                            android:textSize="12sp"
+                            android:text="@string/BIO101"
+                            android:textAllCaps="true"
+                            android:textColor="@color/blue"
+                            android:textStyle="bold" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textStyle="bold"
-                    android:textAllCaps="true"
-                    android:text="@string/BIO101"
-                    android:textColor="@color/blue"
-                    android:layout_marginStart="50dp"
-                    android:layout_gravity="bottom"
-                    android:layout_marginBottom="5dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end|center"
+                            android:layout_marginEnd="20dp"
+                            android:text="c"
+                            android:textAllCaps="true"
+                            android:textColor="@color/blue"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/blue"
-                    android:text="c"
-                    android:textAllCaps="true"
-                    android:textStyle="bold"
-                    android:textSize="20sp"
-                    android:layout_gravity="end|center"
-                    android:layout_marginEnd="20dp"/>
+                    </androidx.cardview.widget.CardView>
 
-            </android.support.v7.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        app:cardElevation="0dp"
+                        android:layout_marginTop="15dp">
 
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginTop="15dp">
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="20dp"
+                            android:contentDescription="@string/image"
+                            android:layout_gravity="start|center"
+                            android:layout_marginStart="20dp"
+                            android:src="@drawable/pass" />
 
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="20dp"
-                    android:layout_marginStart="20dp"
-                    android:layout_gravity="start|center"
-                    android:src="@drawable/pass"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="50dp"
+                            android:layout_marginTop="5dp"
+                            android:text="sta 101 (2)"
+                            android:textAllCaps="true"
+                            android:textColor="@color/purple"
+                            android:textStyle="bold" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/purple"
-                    android:text="sta 101(2)"
-                    android:textAllCaps="true"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginStart="50dp"
-                    android:textStyle="bold"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginStart="50dp"
+                            android:layout_marginBottom="5dp"
+                            android:textSize="12sp"
+                            android:text="@string/STA101"
+                            android:textAllCaps="true"
+                            android:textColor="@color/blue"
+                            android:textStyle="bold" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textStyle="bold"
-                    android:textAllCaps="true"
-                    android:text="@string/STA101"
-                    android:textColor="@color/blue"
-                    android:layout_marginStart="50dp"
-                    android:layout_gravity="bottom"
-                    android:layout_marginBottom="5dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end|center"
+                            android:layout_marginEnd="20dp"
+                            android:text="e"
+                            android:textAllCaps="true"
+                            android:textColor="@color/blue"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/blue"
-                    android:text="e"
-                    android:textAllCaps="true"
-                    android:textStyle="bold"
-                    android:textSize="20sp"
-                    android:layout_gravity="end|center"
-                    android:layout_marginEnd="20dp"/>
+                    </androidx.cardview.widget.CardView>
 
-            </android.support.v7.widget.CardView>
+                </LinearLayout>
 
-            </LinearLayout>
-
-                <android.support.v7.widget.CardView
+                <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="3dp"
                     android:layout_marginTop="10dp"
                     android:backgroundTint="@color/purple">
-                </android.support.v7.widget.CardView>
+                </androidx.cardview.widget.CardView>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -646,6 +672,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textStyle="bold"
+                        android:textSize="12sp"
                         android:layout_marginStart="10dp"
                         android:text="@string/HLRS"
                         android:textColor="@color/purple"
@@ -657,8 +684,9 @@
                         android:layout_height="30dp"
                         android:layout_gravity="center"
                         android:background="@drawable/text_view_shape"
-                        android:layout_marginStart="60dp"
+                        android:layout_marginStart="125dp"
                         android:textColor="@color/purple"
+                        android:textSize="12sp"
                         android:text="2.05"/>
 
                     <Button
@@ -666,28 +694,31 @@
                         android:layout_height="30dp"
                         android:layout_gravity="end|center"
                         android:layout_marginStart="10dp"
+                        android:textSize="12sp"
                         android:background="@drawable/text_view_shape"
                         android:textColor="@color/purple"
                         android:text="21 credits"/>
 
                 </LinearLayout>
 
-                <android.support.v7.widget.CardView
+                <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="3dp"
                     android:layout_marginStart="10dp"
                     android:layout_marginEnd="10dp"
                     android:backgroundTint="@color/purple">
-                </android.support.v7.widget.CardView>
+                </androidx.cardview.widget.CardView>
 
-                <android.support.v7.widget.CardView
+                <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
+                    app:cardElevation="0dp"
                     android:layout_marginTop="15dp">
 
                     <ImageView
                         android:layout_width="30dp"
                         android:layout_height="20dp"
+                        android:contentDescription="@string/image"
                         android:layout_marginStart="20dp"
                         android:layout_gravity="start|center"
                         android:src="@drawable/fail"/>
@@ -696,7 +727,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textColor="@color/purple"
-                        android:text="gst 102(2)"
+                        android:text="gst 102 (2)"
                         android:textAllCaps="true"
 
                         android:layout_marginTop="5dp"
@@ -709,6 +740,7 @@
                         android:textStyle="bold"
                         android:textAllCaps="true"
                         android:text="@string/GST102"
+                        android:textSize="12sp"
                         android:textColor="@color/blue"
                         android:layout_marginStart="50dp"
                         android:layout_gravity="bottom"
@@ -725,16 +757,18 @@
                         android:layout_gravity="end|center"
                         android:layout_marginEnd="20dp"/>
 
-                </android.support.v7.widget.CardView>
+                </androidx.cardview.widget.CardView>
 
-                <android.support.v7.widget.CardView
+                <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
+                    app:cardElevation="0dp"
                     android:layout_marginTop="15dp">
 
                     <ImageView
                         android:layout_width="30dp"
                         android:layout_height="20dp"
+                        android:contentDescription="@string/image"
                         android:layout_marginStart="20dp"
                         android:layout_gravity="start|center"
                         android:src="@drawable/pass"/>
@@ -743,7 +777,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textColor="@color/purple"
-                        android:text="gst 104(2)"
+                        android:text="gst 104 (2)"
                         android:textAllCaps="true"
                         android:layout_marginTop="5dp"
                         android:layout_marginStart="50dp"
@@ -755,6 +789,7 @@
                         android:textStyle="bold"
                         android:textAllCaps="true"
                         android:text="@string/GST104"
+                        android:textSize="12sp"
                         android:textColor="@color/blue"
                         android:layout_marginStart="50dp"
                         android:layout_gravity="bottom"
@@ -771,16 +806,18 @@
                         android:layout_gravity="end|center"
                         android:layout_marginEnd="20dp"/>
 
-                </android.support.v7.widget.CardView>
+                </androidx.cardview.widget.CardView>
 
-                <android.support.v7.widget.CardView
+                <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
+                    app:cardElevation="0dp"
                     android:layout_marginTop="15dp">
 
                     <ImageView
                         android:layout_width="30dp"
                         android:layout_height="20dp"
+                        android:contentDescription="@string/image"
                         android:layout_marginStart="20dp"
                         android:layout_gravity="start|center"
                         android:src="@drawable/pass"/>
@@ -789,7 +826,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textColor="@color/purple"
-                        android:text="gst 108(2)"
+                        android:text="gst 108 (2)"
                         android:textAllCaps="true"
 
                         android:layout_marginTop="5dp"
@@ -802,6 +839,7 @@
                         android:textStyle="bold"
                         android:textAllCaps="true"
                         android:text="@string/GST108"
+                        android:textSize="12sp"
                         android:textColor="@color/blue"
                         android:layout_marginStart="50dp"
                         android:layout_gravity="bottom"
@@ -818,16 +856,18 @@
                         android:layout_gravity="end|center"
                         android:layout_marginEnd="20dp"/>
 
-                </android.support.v7.widget.CardView>
+                </androidx.cardview.widget.CardView>
 
-                <android.support.v7.widget.CardView
+                <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
+                    app:cardElevation="0dp"
                     android:layout_marginTop="15dp">
 
                     <ImageView
                         android:layout_width="30dp"
                         android:layout_height="20dp"
+                        android:contentDescription="@string/image"
                         android:layout_marginStart="20dp"
                         android:layout_gravity="start|center"
                         android:src="@drawable/pass"/>
@@ -836,7 +876,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textColor="@color/purple"
-                        android:text="csc 102(3)"
+                        android:text="csc 102 (3)"
                         android:textAllCaps="true"
 
                         android:layout_marginTop="5dp"
@@ -849,6 +889,7 @@
                         android:textStyle="bold"
                         android:textAllCaps="true"
                         android:text="@string/CSC102"
+                        android:textSize="12sp"
                         android:textColor="@color/blue"
                         android:layout_marginStart="50dp"
                         android:layout_gravity="bottom"
@@ -865,16 +906,18 @@
                         android:layout_gravity="end|center"
                         android:layout_marginEnd="20dp"/>
 
-                </android.support.v7.widget.CardView>
+                </androidx.cardview.widget.CardView>
 
-                <android.support.v7.widget.CardView
+                <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
+                    app:cardElevation="0dp"
                     android:layout_marginTop="15dp">
 
                     <ImageView
                         android:layout_width="30dp"
                         android:layout_height="20dp"
+                        android:contentDescription="@string/image"
                         android:layout_marginStart="20dp"
                         android:layout_gravity="start|center"
                         android:src="@drawable/pass"/>
@@ -883,7 +926,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textColor="@color/purple"
-                        android:text="mat 102(3)"
+                        android:text="mat 102 (3)"
                         android:textAllCaps="true"
                         android:layout_marginTop="5dp"
                         android:layout_marginStart="50dp"
@@ -895,6 +938,7 @@
                         android:textStyle="bold"
                         android:textAllCaps="true"
                         android:text="@string/MAT102"
+                        android:textSize="12sp"
                         android:textColor="@color/blue"
                         android:layout_marginStart="50dp"
                         android:layout_gravity="bottom"
@@ -911,16 +955,18 @@
                         android:layout_gravity="end|center"
                         android:layout_marginEnd="20dp"/>
 
-                </android.support.v7.widget.CardView>
+                </androidx.cardview.widget.CardView>
 
-                <android.support.v7.widget.CardView
+                <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
+                    app:cardElevation="0dp"
                     android:layout_marginTop="15dp">
 
                     <ImageView
                         android:layout_width="30dp"
                         android:layout_height="20dp"
+                        android:contentDescription="@string/image"
                         android:layout_marginStart="20dp"
                         android:layout_gravity="start|center"
                         android:src="@drawable/pass"/>
@@ -929,7 +975,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textColor="@color/purple"
-                        android:text="mat 104(3)"
+                        android:text="mat 104 (3)"
                         android:textAllCaps="true"
                         android:layout_marginTop="5dp"
                         android:layout_marginStart="50dp"
@@ -941,6 +987,7 @@
                         android:textStyle="bold"
                         android:textAllCaps="true"
                         android:text="@string/MAT104"
+                        android:textSize="12sp"
                         android:textColor="@color/blue"
                         android:layout_marginStart="50dp"
                         android:layout_gravity="bottom"
@@ -957,16 +1004,18 @@
                         android:layout_gravity="end|center"
                         android:layout_marginEnd="20dp"/>
 
-                </android.support.v7.widget.CardView>
+                </androidx.cardview.widget.CardView>
 
-                <android.support.v7.widget.CardView
+                <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
+                    app:cardElevation="0dp"
                     android:layout_marginTop="15dp">
 
                     <ImageView
                         android:layout_width="30dp"
                         android:layout_height="20dp"
+                        android:contentDescription="@string/image"
                         android:layout_marginStart="20dp"
                         android:layout_gravity="start|center"
                         android:src="@drawable/pass"/>
@@ -975,7 +1024,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textColor="@color/purple"
-                        android:text="bio 102(3)"
+                        android:text="bio 102 (3)"
                         android:textAllCaps="true"
                         android:layout_marginTop="5dp"
                         android:layout_marginStart="50dp"
@@ -987,6 +1036,7 @@
                         android:textStyle="bold"
                         android:textAllCaps="true"
                         android:text="@string/BIO102"
+                        android:textSize="12sp"
                         android:textColor="@color/blue"
                         android:layout_marginStart="50dp"
                         android:layout_gravity="bottom"
@@ -1003,16 +1053,18 @@
                         android:layout_gravity="end|center"
                         android:layout_marginEnd="20dp"/>
 
-                </android.support.v7.widget.CardView>
+                </androidx.cardview.widget.CardView>
 
-                <android.support.v7.widget.CardView
+                <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
+                    app:cardElevation="0dp"
                     android:layout_marginTop="15dp">
 
                     <ImageView
                         android:layout_width="30dp"
                         android:layout_height="20dp"
+                        android:contentDescription="@string/image"
                         android:layout_marginStart="20dp"
                         android:layout_gravity="start|center"
                         android:src="@drawable/pass"/>
@@ -1021,7 +1073,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textColor="@color/purple"
-                        android:text="phy 102(3)"
+                        android:text="phy 102 (3)"
                         android:textAllCaps="true"
                         android:layout_marginTop="5dp"
                         android:layout_marginStart="50dp"
@@ -1033,6 +1085,7 @@
                         android:textStyle="bold"
                         android:textAllCaps="true"
                         android:text="@string/PHY102"
+                        android:textSize="12sp"
                         android:textColor="@color/blue"
                         android:layout_marginStart="50dp"
                         android:layout_gravity="bottom"
@@ -1049,16 +1102,18 @@
                         android:layout_gravity="end|center"
                         android:layout_marginEnd="20dp"/>
 
-                </android.support.v7.widget.CardView>
+                </androidx.cardview.widget.CardView>
 
-                <android.support.v7.widget.CardView
+                <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
+                    app:cardElevation="0dp"
                     android:layout_marginTop="15dp">
 
                     <ImageView
                         android:layout_width="30dp"
                         android:layout_height="20dp"
+                        android:contentDescription="@string/image"
                         android:layout_marginStart="20dp"
                         android:layout_gravity="start|center"
                         android:src="@drawable/pass"/>
@@ -1067,7 +1122,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textColor="@color/purple"
-                        android:text="sta 102(2)"
+                        android:text="sta 102 (2)"
                         android:textAllCaps="true"
                         android:layout_marginTop="5dp"
                         android:layout_marginStart="50dp"
@@ -1079,6 +1134,7 @@
                         android:textStyle="bold"
                         android:textAllCaps="true"
                         android:text="@string/STA102"
+                        android:textSize="12sp"
                         android:textColor="@color/blue"
                         android:layout_marginStart="50dp"
                         android:layout_gravity="bottom"
@@ -1095,14 +1151,14 @@
                         android:layout_gravity="end|center"
                         android:layout_marginEnd="20dp"/>
 
-                </android.support.v7.widget.CardView>
+                </androidx.cardview.widget.CardView>
 
-                <android.support.v7.widget.CardView
+                <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="3dp"
                     android:layout_marginTop="5dp"
                     android:backgroundTint="@color/purple">
-                </android.support.v7.widget.CardView>
+                </androidx.cardview.widget.CardView>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -1114,8 +1170,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textStyle="bold"
+                        android:textSize="12sp"
                         android:layout_marginStart="10dp"
-                        android:text="@string/TLHS"
+                        android:text="@string/TLHS2"
                         android:textColor="@color/purple"
                         android:textAllCaps="true"
                         android:layout_gravity="start|center"/>
@@ -1125,8 +1182,9 @@
                         android:layout_height="30dp"
                         android:layout_gravity="center"
                         android:background="@drawable/text_view_shape"
-                        android:layout_marginStart="10dp"
+                        android:layout_marginStart="80dp"
                         android:textColor="@color/purple"
+                        android:textSize="12sp"
                         android:text="2.50"/>
 
                     <Button
@@ -1134,33 +1192,36 @@
                         android:layout_height="30dp"
                         android:layout_gravity="end|center"
                         android:layout_marginStart="10dp"
+                        android:textSize="12sp"
                         android:background="@drawable/text_view_shape"
                         android:textColor="@color/purple"
-                        android:text="16 credits"/>
+                        android:text="18 credits"/>
 
                 </LinearLayout>
 
-                <android.support.v7.widget.CardView
+                <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="3dp"
                     android:layout_marginStart="10dp"
                     android:layout_marginEnd="10dp"
                     android:backgroundTint="@color/purple">
-                </android.support.v7.widget.CardView>
+                </androidx.cardview.widget.CardView>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
-                    <android.support.v7.widget.CardView
+                    <androidx.cardview.widget.CardView
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
+                        app:cardElevation="0dp"
                         android:layout_marginTop="15dp">
 
                         <ImageView
                             android:layout_width="30dp"
                             android:layout_height="20dp"
+                            android:contentDescription="@string/image"
                             android:layout_marginStart="20dp"
                             android:layout_gravity="start|center"
                             android:src="@drawable/pass"/>
@@ -1169,9 +1230,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:textColor="@color/purple"
-                            android:text="gst 203(2)"
+                            android:text="gst 203 (2)"
                             android:textAllCaps="true"
-
                             android:layout_marginTop="5dp"
                             android:layout_marginStart="50dp"
                             android:textStyle="bold"/>
@@ -1182,6 +1242,7 @@
                             android:textStyle="bold"
                             android:textAllCaps="true"
                             android:text="@string/GST203"
+                            android:textSize="12sp"
                             android:textColor="@color/blue"
                             android:layout_marginStart="50dp"
                             android:layout_gravity="bottom"
@@ -1198,16 +1259,18 @@
                             android:layout_gravity="end|center"
                             android:layout_marginEnd="20dp"/>
 
-                    </android.support.v7.widget.CardView>
+                    </androidx.cardview.widget.CardView>
 
-                    <android.support.v7.widget.CardView
+                    <androidx.cardview.widget.CardView
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
+                        app:cardElevation="0dp"
                         android:layout_marginTop="15dp">
 
                         <ImageView
                             android:layout_width="30dp"
                             android:layout_height="20dp"
+                            android:contentDescription="@string/image"
                             android:layout_marginStart="20dp"
                             android:layout_gravity="start|center"
                             android:src="@drawable/pass"/>
@@ -1216,7 +1279,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:textColor="@color/purple"
-                            android:text="gst 205(2)"
+                            android:text="gst 205 (2)"
                             android:textAllCaps="true"
                             android:layout_marginTop="5dp"
                             android:layout_marginStart="50dp"
@@ -1229,6 +1292,7 @@
                             android:textAllCaps="true"
                             android:text="@string/GST205"
                             android:textColor="@color/blue"
+                            android:textSize="12sp"
                             android:layout_marginStart="50dp"
                             android:layout_gravity="bottom"
                             android:layout_marginBottom="5dp"/>
@@ -1244,16 +1308,18 @@
                             android:layout_gravity="end|center"
                             android:layout_marginEnd="20dp"/>
 
-                    </android.support.v7.widget.CardView>
+                    </androidx.cardview.widget.CardView>
 
-                    <android.support.v7.widget.CardView
+                    <androidx.cardview.widget.CardView
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
+                        app:cardElevation="0dp"
                         android:layout_marginTop="15dp">
 
                         <ImageView
                             android:layout_width="30dp"
                             android:layout_height="20dp"
+                            android:contentDescription="@string/image"
                             android:layout_marginStart="20dp"
                             android:layout_gravity="start|center"
                             android:src="@drawable/pass"/>
@@ -1262,7 +1328,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:textColor="@color/purple"
-                            android:text="csc 201(3)"
+                            android:text="csc 201 (3)"
                             android:textAllCaps="true"
                             android:layout_marginTop="5dp"
                             android:layout_marginStart="50dp"
@@ -1273,6 +1339,7 @@
                             android:layout_height="wrap_content"
                             android:textStyle="bold"
                             android:textAllCaps="true"
+                            android:textSize="12sp"
                             android:text="@string/CSC201"
                             android:textColor="@color/blue"
                             android:layout_marginStart="50dp"
@@ -1290,25 +1357,27 @@
                             android:layout_gravity="end|center"
                             android:layout_marginEnd="20dp"/>
 
-                    </android.support.v7.widget.CardView>
+                    </androidx.cardview.widget.CardView>
 
-                    <android.support.v7.widget.CardView
+                    <androidx.cardview.widget.CardView
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
+                        app:cardElevation="0dp"
                         android:layout_marginTop="15dp">
 
                         <ImageView
                             android:layout_width="30dp"
                             android:layout_height="20dp"
+                            android:contentDescription="@string/image"
                             android:layout_marginStart="20dp"
                             android:layout_gravity="start|center"
-                            android:src="@drawable/fail"/>
+                            android:src="@drawable/pass"/>
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:textColor="@color/purple"
-                            android:text="csc 205(2)"
+                            android:text="csc 205 (2)"
                             android:textAllCaps="true"
                             android:layout_marginTop="5dp"
                             android:layout_marginStart="50dp"
@@ -1319,6 +1388,7 @@
                             android:layout_height="wrap_content"
                             android:textStyle="bold"
                             android:textAllCaps="true"
+                            android:textSize="12sp"
                             android:text="@string/CSC205"
                             android:textColor="@color/blue"
                             android:layout_marginStart="50dp"
@@ -1329,23 +1399,25 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textColor="@color/blue"
-                            android:text="f"
+                            android:text="A"
                             android:textAllCaps="true"
                             android:textStyle="bold"
                             android:textSize="20sp"
                             android:layout_gravity="end|center"
                             android:layout_marginEnd="20dp"/>
 
-                    </android.support.v7.widget.CardView>
+                    </androidx.cardview.widget.CardView>
 
-                    <android.support.v7.widget.CardView
+                    <androidx.cardview.widget.CardView
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
+                        app:cardElevation="0dp"
                         android:layout_marginTop="15dp">
 
                         <ImageView
                             android:layout_width="30dp"
                             android:layout_height="20dp"
+                            android:contentDescription="@string/image"
                             android:layout_marginStart="20dp"
                             android:layout_gravity="start|center"
                             android:src="@drawable/pass"/>
@@ -1354,7 +1426,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:textColor="@color/purple"
-                            android:text="gst 201(2)"
+                            android:text="gst 201 (2)"
                             android:textAllCaps="true"
                             android:layout_marginTop="5dp"
                             android:layout_marginStart="50dp"
@@ -1365,6 +1437,7 @@
                             android:layout_height="wrap_content"
                             android:textStyle="bold"
                             android:textAllCaps="true"
+                            android:textSize="12sp"
                             android:text="@string/GST201"
                             android:textColor="@color/blue"
                             android:layout_marginStart="50dp"
@@ -1382,16 +1455,18 @@
                             android:layout_gravity="end|center"
                             android:layout_marginEnd="20dp"/>
 
-                    </android.support.v7.widget.CardView>
+                    </androidx.cardview.widget.CardView>
 
-                    <android.support.v7.widget.CardView
+                    <androidx.cardview.widget.CardView
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
+                        app:cardElevation="0dp"
                         android:layout_marginTop="15dp">
 
                         <ImageView
                             android:layout_width="30dp"
                             android:layout_height="20dp"
+                            android:contentDescription="@string/image"
                             android:layout_marginStart="20dp"
                             android:layout_gravity="start|center"
                             android:src="@drawable/pass"/>
@@ -1400,7 +1475,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:textColor="@color/purple"
-                            android:text="mat 201(3)"
+                            android:text="mat 201 (3)"
                             android:textAllCaps="true"
                             android:layout_marginTop="5dp"
                             android:layout_marginStart="50dp"
@@ -1411,6 +1486,7 @@
                             android:layout_height="wrap_content"
                             android:textStyle="bold"
                             android:textAllCaps="true"
+                            android:textSize="12sp"
                             android:text="@string/MAT201"
                             android:textColor="@color/blue"
                             android:layout_marginStart="50dp"
@@ -1428,16 +1504,18 @@
                             android:layout_gravity="end|center"
                             android:layout_marginEnd="20dp"/>
 
-                    </android.support.v7.widget.CardView>
+                    </androidx.cardview.widget.CardView>
 
-                    <android.support.v7.widget.CardView
+                    <androidx.cardview.widget.CardView
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
+                        app:cardElevation="0dp"
                         android:layout_marginTop="15dp">
 
                         <ImageView
                             android:layout_width="30dp"
                             android:layout_height="20dp"
+                            android:contentDescription="@string/image"
                             android:layout_marginStart="20dp"
                             android:layout_gravity="start|center"
                             android:src="@drawable/pass"/>
@@ -1446,7 +1524,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:textColor="@color/purple"
-                            android:text="mat 203(2)"
+                            android:text="mat 203 (2)"
                             android:textAllCaps="true"
                             android:layout_marginTop="5dp"
                             android:layout_marginStart="50dp"
@@ -1457,6 +1535,7 @@
                             android:layout_height="wrap_content"
                             android:textStyle="bold"
                             android:textAllCaps="true"
+                            android:textSize="12sp"
                             android:text="@string/MAT203"
                             android:textColor="@color/blue"
                             android:layout_marginStart="50dp"
@@ -1474,16 +1553,18 @@
                             android:layout_gravity="end|center"
                             android:layout_marginEnd="20dp"/>
 
-                    </android.support.v7.widget.CardView>
+                    </androidx.cardview.widget.CardView>
 
-                    <android.support.v7.widget.CardView
+                    <androidx.cardview.widget.CardView
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
+                        app:cardElevation="0dp"
                         android:layout_marginTop="15dp">
 
                         <ImageView
                             android:layout_width="30dp"
                             android:layout_height="20dp"
+                            android:contentDescription="@string/image"
                             android:layout_marginStart="20dp"
                             android:layout_gravity="start|center"
                             android:src="@drawable/fail"/>
@@ -1492,7 +1573,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:textColor="@color/purple"
-                            android:text="sta 203(2)"
+                            android:text="sta 203 (2)"
                             android:textAllCaps="true"
                             android:layout_marginTop="5dp"
                             android:layout_marginStart="50dp"
@@ -1503,6 +1584,7 @@
                             android:layout_height="wrap_content"
                             android:textStyle="bold"
                             android:textAllCaps="true"
+                            android:textSize="12sp"
                             android:text="@string/STA203"
                             android:textColor="@color/blue"
                             android:layout_marginStart="50dp"
@@ -1513,23 +1595,25 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textColor="@color/blue"
-                            android:text="d"
+                            android:text="f"
                             android:textAllCaps="true"
                             android:textStyle="bold"
                             android:textSize="20sp"
                             android:layout_gravity="end|center"
                             android:layout_marginEnd="20dp"/>
 
-                    </android.support.v7.widget.CardView>
+                    </androidx.cardview.widget.CardView>
 
-                    <android.support.v7.widget.CardView
+                    <androidx.cardview.widget.CardView
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
+                        app:cardElevation="0dp"
                         android:layout_marginTop="15dp">
 
                         <ImageView
                             android:layout_width="30dp"
                             android:layout_height="20dp"
+                            android:contentDescription="@string/image"
                             android:layout_marginStart="20dp"
                             android:layout_gravity="start|center"
                             android:src="@drawable/pass"/>
@@ -1538,7 +1622,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:textColor="@color/purple"
-                            android:text="phy 201(2)"
+                            android:text="phy 201 (2)"
                             android:textAllCaps="true"
                             android:layout_marginTop="5dp"
                             android:layout_marginStart="50dp"
@@ -1549,6 +1633,7 @@
                             android:layout_height="wrap_content"
                             android:textStyle="bold"
                             android:textAllCaps="true"
+                            android:textSize="12sp"
                             android:text="@string/PHY201"
                             android:textColor="@color/blue"
                             android:layout_marginStart="50dp"
@@ -1566,16 +1651,16 @@
                             android:layout_gravity="end|center"
                             android:layout_marginEnd="20dp"/>
 
-                    </android.support.v7.widget.CardView>
+                    </androidx.cardview.widget.CardView>
 
                 </LinearLayout>
 
-                <android.support.v7.widget.CardView
+                <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="3dp"
                     android:layout_marginTop="10dp"
                     android:backgroundTint="@color/purple">
-                </android.support.v7.widget.CardView>
+                </androidx.cardview.widget.CardView>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -1587,8 +1672,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textStyle="bold"
+                        android:textSize="12sp"
                         android:layout_marginStart="10dp"
-                        android:text="@string/TLRS"
+                        android:text="@string/TLRS2"
                         android:textColor="@color/purple"
                         android:textAllCaps="true"
                         android:layout_gravity="start|center"/>
@@ -1598,8 +1684,9 @@
                         android:layout_height="30dp"
                         android:layout_gravity="center"
                         android:background="@drawable/text_view_shape"
-                        android:layout_marginStart="60dp"
+                        android:layout_marginStart="125dp"
                         android:textColor="@color/purple"
+                        android:textSize="12sp"
                         android:text="2.97"/>
 
                     <Button
@@ -1607,28 +1694,31 @@
                         android:layout_height="30dp"
                         android:layout_gravity="end|center"
                         android:layout_marginStart="10dp"
+                        android:textSize="12sp"
                         android:background="@drawable/text_view_shape"
                         android:textColor="@color/purple"
-                        android:text="15 credits"/>
+                        android:text="16 credits"/>
 
                 </LinearLayout>
 
-                <android.support.v7.widget.CardView
+                <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="3dp"
                     android:layout_marginStart="10dp"
                     android:layout_marginEnd="10dp"
                     android:backgroundTint="@color/purple">
-                </android.support.v7.widget.CardView>
+                </androidx.cardview.widget.CardView>
 
-                <android.support.v7.widget.CardView
+                <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
+                    app:cardElevation="0dp"
                     android:layout_marginTop="15dp">
 
                     <ImageView
                         android:layout_width="30dp"
                         android:layout_height="20dp"
+                        android:contentDescription="@string/image"
                         android:layout_marginStart="20dp"
                         android:layout_gravity="start|center"
                         android:src="@drawable/pass"/>
@@ -1637,7 +1727,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textColor="@color/purple"
-                        android:text="csc 202(3)"
+                        android:text="csc 202 (3)"
                         android:textAllCaps="true"
                         android:layout_marginTop="5dp"
                         android:layout_marginStart="50dp"
@@ -1648,7 +1738,8 @@
                         android:layout_height="wrap_content"
                         android:textStyle="bold"
                         android:textAllCaps="true"
-                        android:text="structured programming"
+                        android:text="@string/CSC202"
+                        android:textSize="12sp"
                         android:textColor="@color/blue"
                         android:layout_marginStart="50dp"
                         android:layout_gravity="bottom"
@@ -1665,16 +1756,18 @@
                         android:layout_gravity="end|center"
                         android:layout_marginEnd="20dp"/>
 
-                </android.support.v7.widget.CardView>
+                </androidx.cardview.widget.CardView>
 
-                <android.support.v7.widget.CardView
+                <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
+                    app:cardElevation="0dp"
                     android:layout_marginTop="15dp">
 
                     <ImageView
                         android:layout_width="30dp"
                         android:layout_height="20dp"
+                        android:contentDescription="@string/image"
                         android:layout_marginStart="20dp"
                         android:layout_gravity="start|center"
                         android:src="@drawable/pass"/>
@@ -1683,7 +1776,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textColor="@color/purple"
-                        android:text="csc 212(2)"
+                        android:text="csc 212 (2)"
                         android:textAllCaps="true"
                         android:layout_marginTop="5dp"
                         android:layout_marginStart="50dp"
@@ -1694,7 +1787,8 @@
                         android:layout_height="wrap_content"
                         android:textStyle="bold"
                         android:textAllCaps="true"
-                        android:text="compuer hardware"
+                        android:textSize="12sp"
+                        android:text="@string/CSC212"
                         android:textColor="@color/blue"
                         android:layout_marginStart="50dp"
                         android:layout_gravity="bottom"
@@ -1711,16 +1805,18 @@
                         android:layout_gravity="end|center"
                         android:layout_marginEnd="20dp"/>
 
-                </android.support.v7.widget.CardView>
+                </androidx.cardview.widget.CardView>
 
-                <android.support.v7.widget.CardView
+                <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
+                    app:cardElevation="0dp"
                     android:layout_marginTop="15dp">
 
                     <ImageView
                         android:layout_width="30dp"
                         android:layout_height="20dp"
+                        android:contentDescription="@string/image"
                         android:layout_marginStart="20dp"
                         android:layout_gravity="start|center"
                         android:src="@drawable/pass"/>
@@ -1729,7 +1825,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textColor="@color/purple"
-                        android:text="csc 204(2)"
+                        android:text="csc 204 (2)"
                         android:textAllCaps="true"
                         android:layout_marginTop="5dp"
                         android:layout_marginStart="50dp"
@@ -1740,7 +1836,8 @@
                         android:layout_height="wrap_content"
                         android:textStyle="bold"
                         android:textAllCaps="true"
-                        android:text="fundamental of data structures"
+                        android:textSize="12sp"
+                        android:text="@string/CSC204"
                         android:textColor="@color/blue"
                         android:layout_marginStart="50dp"
                         android:layout_gravity="bottom"
@@ -1757,16 +1854,18 @@
                         android:layout_gravity="end|center"
                         android:layout_marginEnd="20dp"/>
 
-                </android.support.v7.widget.CardView>
+                </androidx.cardview.widget.CardView>
 
-                <android.support.v7.widget.CardView
+                <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
+                    app:cardElevation="0dp"
                     android:layout_marginTop="15dp">
 
                     <ImageView
                         android:layout_width="30dp"
                         android:layout_height="20dp"
+                        android:contentDescription="@string/image"
                         android:layout_marginStart="20dp"
                         android:layout_gravity="start|center"
                         android:src="@drawable/pass"/>
@@ -1775,7 +1874,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textColor="@color/purple"
-                        android:text="csc 214(2)"
+                        android:text="csc 214 (2)"
                         android:textAllCaps="true"
                         android:layout_marginTop="5dp"
                         android:layout_marginStart="50dp"
@@ -1786,7 +1885,8 @@
                         android:layout_height="wrap_content"
                         android:textStyle="bold"
                         android:textAllCaps="true"
-                        android:text="computer architecture"
+                        android:textSize="12sp"
+                        android:text="@string/CSC214"
                         android:textColor="@color/blue"
                         android:layout_marginStart="50dp"
                         android:layout_gravity="bottom"
@@ -1803,16 +1903,18 @@
                         android:layout_gravity="end|center"
                         android:layout_marginEnd="20dp"/>
 
-                </android.support.v7.widget.CardView>
+                </androidx.cardview.widget.CardView>
 
-                <android.support.v7.widget.CardView
+                <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
+                    app:cardElevation="0dp"
                     android:layout_marginTop="15dp">
 
                     <ImageView
                         android:layout_width="30dp"
                         android:layout_height="20dp"
+                        android:contentDescription="@string/image"
                         android:layout_marginStart="20dp"
                         android:layout_gravity="start|center"
                         android:src="@drawable/pass"/>
@@ -1821,7 +1923,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textColor="@color/purple"
-                        android:text="csc 216(2)"
+                        android:text="csc 216 (2)"
                         android:textAllCaps="true"
                         android:layout_marginTop="5dp"
                         android:layout_marginStart="50dp"
@@ -1832,7 +1934,8 @@
                         android:layout_height="wrap_content"
                         android:textStyle="bold"
                         android:textAllCaps="true"
-                        android:text="data management 2"
+                        android:textSize="12sp"
+                        android:text="@string/CSC216"
                         android:textColor="@color/blue"
                         android:layout_marginStart="50dp"
                         android:layout_gravity="bottom"
@@ -1849,16 +1952,18 @@
                         android:layout_gravity="end|center"
                         android:layout_marginEnd="20dp"/>
 
-                </android.support.v7.widget.CardView>
+                </androidx.cardview.widget.CardView>
 
-                <android.support.v7.widget.CardView
+                <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
+                    app:cardElevation="0dp"
                     android:layout_marginTop="15dp">
 
                     <ImageView
                         android:layout_width="30dp"
                         android:layout_height="20dp"
+                        android:contentDescription="@string/image"
                         android:layout_marginStart="20dp"
                         android:layout_gravity="start|center"
                         android:src="@drawable/pass"/>
@@ -1867,7 +1972,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textColor="@color/purple"
-                        android:text="mat 202(3)"
+                        android:text="mat 202 (3)"
                         android:textAllCaps="true"
                         android:layout_marginTop="5dp"
                         android:layout_marginStart="50dp"
@@ -1878,7 +1983,8 @@
                         android:layout_height="wrap_content"
                         android:textStyle="bold"
                         android:textAllCaps="true"
-                        android:text="elementary differential equation"
+                        android:textSize="12sp"
+                        android:text="@string/MAT202"
                         android:textColor="@color/blue"
                         android:layout_marginStart="50dp"
                         android:layout_gravity="bottom"
@@ -1895,16 +2001,18 @@
                         android:layout_gravity="end|center"
                         android:layout_marginEnd="20dp"/>
 
-                </android.support.v7.widget.CardView>
+                </androidx.cardview.widget.CardView>
 
-                <android.support.v7.widget.CardView
+                <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
+                    app:cardElevation="0dp"
                     android:layout_marginTop="15dp">
 
                     <ImageView
                         android:layout_width="30dp"
                         android:layout_height="20dp"
+                        android:contentDescription="@string/image"
                         android:layout_marginStart="20dp"
                         android:layout_gravity="start|center"
                         android:src="@drawable/fail"/>
@@ -1913,7 +2021,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textColor="@color/purple"
-                        android:text="mat 204(2)"
+                        android:text="mat 204 (2)"
                         android:textAllCaps="true"
                         android:layout_marginTop="5dp"
                         android:layout_marginStart="50dp"
@@ -1924,7 +2032,7 @@
                         android:layout_height="wrap_content"
                         android:textStyle="bold"
                         android:textAllCaps="true"
-                        android:text="linear algebra 2"
+                        android:text="@string/MAT204"
                         android:textColor="@color/blue"
                         android:layout_marginStart="50dp"
                         android:layout_gravity="bottom"
@@ -1941,16 +2049,18 @@
                         android:layout_gravity="end|center"
                         android:layout_marginEnd="20dp"/>
 
-                </android.support.v7.widget.CardView>
+                </androidx.cardview.widget.CardView>
 
-                <android.support.v7.widget.CardView
+                <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
+                    app:cardElevation="0dp"
                     android:layout_marginTop="15dp">
 
                     <ImageView
                         android:layout_width="30dp"
                         android:layout_height="20dp"
+                        android:contentDescription="@string/image"
                         android:layout_marginStart="20dp"
                         android:layout_gravity="start|center"
                         android:src="@drawable/fail"/>
@@ -1959,7 +2069,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textColor="@color/purple"
-                        android:text="sta 204(2)"
+                        android:text="sta 204 (2)"
                         android:textAllCaps="true"
                         android:layout_marginTop="5dp"
                         android:layout_marginStart="50dp"
@@ -1970,7 +2080,8 @@
                         android:layout_height="wrap_content"
                         android:textStyle="bold"
                         android:textAllCaps="true"
-                        android:text="statistics for physical sciences 2"
+                        android:textSize="12sp"
+                        android:text="@string/STA204"
                         android:textColor="@color/blue"
                         android:layout_marginStart="50dp"
                         android:layout_gravity="bottom"
@@ -1987,16 +2098,18 @@
                         android:layout_gravity="end|center"
                         android:layout_marginEnd="20dp"/>
 
-                </android.support.v7.widget.CardView>
+                </androidx.cardview.widget.CardView>
 
-                <android.support.v7.widget.CardView
+                <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
+                    app:cardElevation="0dp"
                     android:layout_marginTop="15dp">
 
                     <ImageView
                         android:layout_width="30dp"
                         android:layout_height="20dp"
+                        android:contentDescription="@string/image"
                         android:layout_marginStart="20dp"
                         android:layout_gravity="start|center"
                         android:src="@drawable/pass"/>
@@ -2005,7 +2118,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textColor="@color/purple"
-                        android:text="gst 204(2)"
+                        android:text="gst 204 (2)"
                         android:textAllCaps="true"
                         android:layout_marginTop="5dp"
                         android:layout_marginStart="50dp"
@@ -2016,7 +2129,8 @@
                         android:layout_height="wrap_content"
                         android:textStyle="bold"
                         android:textAllCaps="true"
-                        android:text="entrepreneurial development 2"
+                        android:textSize="12sp"
+                        android:text="@string/GST204"
                         android:textColor="@color/blue"
                         android:layout_marginStart="50dp"
                         android:layout_gravity="bottom"
@@ -2033,14 +2147,15 @@
                         android:layout_gravity="end|center"
                         android:layout_marginEnd="20dp"/>
 
-                </android.support.v7.widget.CardView>
+                </androidx.cardview.widget.CardView>
 
-                <android.support.v7.widget.CardView
+                <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="3dp"
+                    app:cardElevation="0dp"
                     android:layout_marginTop="10dp"
                     android:backgroundTint="@color/purple">
-                </android.support.v7.widget.CardView>
+                </androidx.cardview.widget.CardView>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -2052,8 +2167,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textStyle="bold"
+                        android:textSize="12sp"
                         android:layout_marginStart="10dp"
-                        android:text="300l harmattan semester"
+                        android:text="@string/TLHS3"
                         android:textColor="@color/purple"
                         android:textAllCaps="true"
                         android:layout_gravity="start|center"/>
@@ -2063,8 +2179,9 @@
                         android:layout_height="30dp"
                         android:layout_gravity="center"
                         android:background="@drawable/text_view_shape"
-                        android:layout_marginStart="10dp"
+                        android:layout_marginStart="80dp"
                         android:textColor="@color/purple"
+                        android:textSize="12sp"
                         android:text="4.50"/>
 
                     <Button
@@ -2074,26 +2191,29 @@
                         android:layout_marginStart="10dp"
                         android:background="@drawable/text_view_shape"
                         android:textColor="@color/purple"
+                        android:textSize="12sp"
                         android:text="18 credits"/>
 
                 </LinearLayout>
 
-                <android.support.v7.widget.CardView
+                <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="3dp"
                     android:layout_marginStart="10dp"
                     android:layout_marginEnd="10dp"
                     android:backgroundTint="@color/purple">
-                </android.support.v7.widget.CardView>
+                </androidx.cardview.widget.CardView>
 
-                <android.support.v7.widget.CardView
+                <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
+                    app:cardElevation="0dp"
                     android:layout_marginTop="15dp">
 
                     <ImageView
                         android:layout_width="30dp"
                         android:layout_height="20dp"
+                        android:contentDescription="@string/image"
                         android:layout_marginStart="20dp"
                         android:layout_gravity="start|center"
                         android:src="@drawable/pass"/>
@@ -2102,7 +2222,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textColor="@color/purple"
-                        android:text="csc 301(2)"
+                        android:text="csc 301 (2)"
                         android:textAllCaps="true"
                         android:layout_marginTop="5dp"
                         android:layout_marginStart="50dp"
@@ -2113,7 +2233,8 @@
                         android:layout_height="wrap_content"
                         android:textStyle="bold"
                         android:textAllCaps="true"
-                        android:text="assembly language programming"
+                        android:textSize="12sp"
+                        android:text="@string/CSC301"
                         android:textColor="@color/blue"
                         android:layout_marginStart="50dp"
                         android:layout_gravity="bottom"
@@ -2130,16 +2251,18 @@
                         android:layout_gravity="end|center"
                         android:layout_marginEnd="20dp"/>
 
-                </android.support.v7.widget.CardView>
+                </androidx.cardview.widget.CardView>
 
-                <android.support.v7.widget.CardView
+                <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
+                    app:cardElevation="0dp"
                     android:layout_marginTop="15dp">
 
                     <ImageView
                         android:layout_width="30dp"
                         android:layout_height="20dp"
+                        android:contentDescription="@string/image"
                         android:layout_marginStart="20dp"
                         android:layout_gravity="start|center"
                         android:src="@drawable/pass"/>
@@ -2148,7 +2271,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textColor="@color/purple"
-                        android:text="csc 311(3)"
+                        android:text="csc 311 (3)"
                         android:textAllCaps="true"
                         android:layout_marginTop="5dp"
                         android:layout_marginStart="50dp"
@@ -2159,7 +2282,8 @@
                         android:layout_height="wrap_content"
                         android:textStyle="bold"
                         android:textAllCaps="true"
-                        android:text="oop java"
+                        android:text="@string/CSC311"
+                        android:textSize="12sp"
                         android:textColor="@color/blue"
                         android:layout_marginStart="50dp"
                         android:layout_gravity="bottom"
@@ -2176,16 +2300,18 @@
                         android:layout_gravity="end|center"
                         android:layout_marginEnd="20dp"/>
 
-                </android.support.v7.widget.CardView>
+                </androidx.cardview.widget.CardView>
 
-                <android.support.v7.widget.CardView
+                <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
+                    app:cardElevation="0dp"
                     android:layout_marginTop="15dp">
 
                     <ImageView
                         android:layout_width="30dp"
                         android:layout_height="20dp"
+                        android:contentDescription="@string/image"
                         android:layout_marginStart="20dp"
                         android:layout_gravity="start|center"
                         android:src="@drawable/pass"/>
@@ -2194,7 +2320,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textColor="@color/purple"
-                        android:text="csc 305(2)"
+                        android:text="csc 305 (2)"
                         android:textAllCaps="true"
                         android:layout_marginTop="5dp"
                         android:layout_marginStart="50dp"
@@ -2205,7 +2331,8 @@
                         android:layout_height="wrap_content"
                         android:textStyle="bold"
                         android:textAllCaps="true"
-                        android:text="operating systems 2"
+                        android:textSize="12sp"
+                        android:text="@string/CSC305"
                         android:textColor="@color/blue"
                         android:layout_marginStart="50dp"
                         android:layout_gravity="bottom"
@@ -2222,16 +2349,18 @@
                         android:layout_gravity="end|center"
                         android:layout_marginEnd="20dp"/>
 
-                </android.support.v7.widget.CardView>
+                </androidx.cardview.widget.CardView>
 
-                <android.support.v7.widget.CardView
+                <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
+                    app:cardElevation="0dp"
                     android:layout_marginTop="15dp">
 
                     <ImageView
                         android:layout_width="30dp"
                         android:layout_height="20dp"
+                        android:contentDescription="@string/image"
                         android:layout_marginStart="20dp"
                         android:layout_gravity="start|center"
                         android:src="@drawable/pass"/>
@@ -2240,7 +2369,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textColor="@color/purple"
-                        android:text="csc 307(2)"
+                        android:text="csc 307 (2)"
                         android:textAllCaps="true"
                         android:layout_marginTop="5dp"
                         android:layout_marginStart="50dp"
@@ -2251,7 +2380,8 @@
                         android:layout_height="wrap_content"
                         android:textStyle="bold"
                         android:textAllCaps="true"
-                        android:text="data management 2"
+                        android:textSize="12sp"
+                        android:text="@string/CSC307"
                         android:textColor="@color/blue"
                         android:layout_marginStart="50dp"
                         android:layout_gravity="bottom"
@@ -2268,16 +2398,18 @@
                         android:layout_gravity="end|center"
                         android:layout_marginEnd="20dp"/>
 
-                </android.support.v7.widget.CardView>
+                </androidx.cardview.widget.CardView>
 
-                <android.support.v7.widget.CardView
+                <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
+                    app:cardElevation="0dp"
                     android:layout_marginTop="15dp">
 
                     <ImageView
                         android:layout_width="30dp"
                         android:layout_height="20dp"
+                        android:contentDescription="@string/image"
                         android:layout_marginStart="20dp"
                         android:layout_gravity="start|center"
                         android:src="@drawable/pass"/>
@@ -2286,7 +2418,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textColor="@color/purple"
-                        android:text="csc 315(2)"
+                        android:text="csc 315 (2)"
                         android:textAllCaps="true"
                         android:layout_marginTop="5dp"
                         android:layout_marginStart="50dp"
@@ -2297,7 +2429,8 @@
                         android:layout_height="wrap_content"
                         android:textStyle="bold"
                         android:textAllCaps="true"
-                        android:text="computer architecture 2"
+                        android:textSize="12sp"
+                        android:text="@string/CSC315"
                         android:textColor="@color/blue"
                         android:layout_marginStart="50dp"
                         android:layout_gravity="bottom"
@@ -2314,16 +2447,18 @@
                         android:layout_gravity="end|center"
                         android:layout_marginEnd="20dp"/>
 
-                </android.support.v7.widget.CardView>
+                </androidx.cardview.widget.CardView>
 
-                <android.support.v7.widget.CardView
+                <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
+                    app:cardElevation="0dp"
                     android:layout_marginTop="15dp">
 
                     <ImageView
                         android:layout_width="30dp"
                         android:layout_height="20dp"
+                        android:contentDescription="@string/image"
                         android:layout_marginStart="20dp"
                         android:layout_gravity="start|center"
                         android:src="@drawable/pass"/>
@@ -2332,7 +2467,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textColor="@color/purple"
-                        android:text="csc 311(3)"
+                        android:text="csc 312 (3)"
                         android:textAllCaps="true"
                         android:layout_marginTop="5dp"
                         android:layout_marginStart="50dp"
@@ -2343,7 +2478,8 @@
                         android:layout_height="wrap_content"
                         android:textStyle="bold"
                         android:textAllCaps="true"
-                        android:text="system analysis and design"
+                        android:textSize="12sp"
+                        android:text="@string/CSC312"
                         android:textColor="@color/blue"
                         android:layout_marginStart="50dp"
                         android:layout_gravity="bottom"
@@ -2360,16 +2496,18 @@
                         android:layout_gravity="end|center"
                         android:layout_marginEnd="20dp"/>
 
-                </android.support.v7.widget.CardView>
+                </androidx.cardview.widget.CardView>
 
-                <android.support.v7.widget.CardView
+                <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
+                    app:cardElevation="0dp"
                     android:layout_marginTop="15dp">
 
                     <ImageView
                         android:layout_width="30dp"
                         android:layout_height="20dp"
+                        android:contentDescription="@string/image"
                         android:layout_marginStart="20dp"
                         android:layout_gravity="start|center"
                         android:src="@drawable/pass"/>
@@ -2378,7 +2516,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textColor="@color/purple"
-                        android:text="csc 331(2)"
+                        android:text="csc 331 (2)"
                         android:textAllCaps="true"
                         android:layout_marginTop="5dp"
                         android:layout_marginStart="50dp"
@@ -2389,7 +2527,8 @@
                         android:layout_height="wrap_content"
                         android:textStyle="bold"
                         android:textAllCaps="true"
-                        android:text="operations research"
+                        android:text="@string/CSC331"
+                        android:textSize="12sp"
                         android:textColor="@color/blue"
                         android:layout_marginStart="50dp"
                         android:layout_gravity="bottom"
@@ -2406,16 +2545,18 @@
                         android:layout_gravity="end|center"
                         android:layout_marginEnd="20dp"/>
 
-                </android.support.v7.widget.CardView>
+                </androidx.cardview.widget.CardView>
 
-                <android.support.v7.widget.CardView
+                <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
+                    app:cardElevation="0dp"
                     android:layout_marginTop="15dp">
 
                     <ImageView
                         android:layout_width="30dp"
                         android:layout_height="20dp"
+                        android:contentDescription="@string/image"
                         android:layout_marginStart="20dp"
                         android:layout_gravity="start|center"
                         android:src="@drawable/pass"/>
@@ -2424,7 +2565,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textColor="@color/purple"
-                        android:text="csc 303(2)"
+                        android:text="csc 303 (2)"
                         android:textAllCaps="true"
                         android:layout_marginTop="5dp"
                         android:layout_marginStart="50dp"
@@ -2435,7 +2576,8 @@
                         android:layout_height="wrap_content"
                         android:textStyle="bold"
                         android:textAllCaps="true"
-                        android:text="digital computer logic"
+                        android:textSize="12sp"
+                        android:text="@string/CSC303"
                         android:textColor="@color/blue"
                         android:layout_marginStart="50dp"
                         android:layout_gravity="bottom"
@@ -2452,14 +2594,14 @@
                         android:layout_gravity="end|center"
                         android:layout_marginEnd="20dp"/>
 
-                </android.support.v7.widget.CardView>
+                </androidx.cardview.widget.CardView>
 
-                <android.support.v7.widget.CardView
+                <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="3dp"
                     android:layout_marginTop="10dp"
                     android:backgroundTint="@color/purple">
-                </android.support.v7.widget.CardView>
+                </androidx.cardview.widget.CardView>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -2472,7 +2614,8 @@
                         android:layout_height="wrap_content"
                         android:textStyle="bold"
                         android:layout_marginStart="10dp"
-                        android:text="300l rain semester"
+                        android:text="@string/TLRS3"
+                        android:textSize="12sp"
                         android:textColor="@color/purple"
                         android:textAllCaps="true"
                         android:layout_gravity="start|center"/>
@@ -2482,8 +2625,9 @@
                         android:layout_height="30dp"
                         android:layout_gravity="center"
                         android:background="@drawable/text_view_shape"
-                        android:layout_marginStart="60dp"
+                        android:layout_marginStart="125sp"
                         android:textColor="@color/purple"
+                        android:textSize="12sp"
                         android:text="5.00"/>
 
                     <Button
@@ -2491,23 +2635,25 @@
                         android:layout_height="30dp"
                         android:layout_gravity="end|center"
                         android:layout_marginStart="10dp"
+                        android:textSize="12sp"
                         android:background="@drawable/text_view_shape"
                         android:textColor="@color/purple"
-                        android:text="9 credits"/>
+                        android:text="15 credits"/>
 
                 </LinearLayout>
 
-                <android.support.v7.widget.CardView
+                <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="3dp"
                     android:layout_marginStart="10dp"
                     android:layout_marginEnd="10dp"
                     android:backgroundTint="@color/purple">
-                </android.support.v7.widget.CardView>
+                </androidx.cardview.widget.CardView>
 
-                <android.support.v7.widget.CardView
+                <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
+                    app:cardElevation="0dp"
                     android:layout_marginTop="15dp">
 
                     <ImageView
@@ -2521,7 +2667,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textColor="@color/purple"
-                        android:text="csc 399(9)"
+                        android:text="csc 399 (15)"
                         android:textAllCaps="true"
                         android:layout_marginTop="5dp"
                         android:layout_marginStart="50dp"
@@ -2532,7 +2678,8 @@
                         android:layout_height="wrap_content"
                         android:textStyle="bold"
                         android:textAllCaps="true"
-                        android:text="industrial training"
+                        android:text="@string/CSC399"
+                        android:textSize="12sp"
                         android:textColor="@color/blue"
                         android:layout_marginStart="50dp"
                         android:layout_gravity="bottom"
@@ -2549,14 +2696,14 @@
                         android:layout_gravity="end|center"
                         android:layout_marginEnd="20dp"/>
 
-                </android.support.v7.widget.CardView>
+                </androidx.cardview.widget.CardView>
 
-                <android.support.v7.widget.CardView
+                <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="3dp"
                     android:layout_marginTop="10dp"
                     android:backgroundTint="@color/purple">
-                </android.support.v7.widget.CardView>
+                </androidx.cardview.widget.CardView>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -2568,8 +2715,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textStyle="bold"
+                        android:textSize="12sp"
                         android:layout_marginStart="10dp"
-                        android:text="400l harmattan semester"
+                        android:text="@string/FLHS"
                         android:textColor="@color/purple"
                         android:textAllCaps="true"
                         android:layout_gravity="start|center"/>
@@ -2579,7 +2727,7 @@
                         android:layout_height="30dp"
                         android:layout_gravity="center"
                         android:background="@drawable/text_view_shape"
-                        android:layout_marginStart="10dp"
+                        android:layout_marginStart="80dp"
                         android:textColor="@color/purple" />
 
                     <Button
@@ -2592,17 +2740,18 @@
 
                 </LinearLayout>
 
-                <android.support.v7.widget.CardView
+                <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="3dp"
                     android:layout_marginStart="10dp"
                     android:layout_marginEnd="10dp"
                     android:backgroundTint="@color/purple">
-                </android.support.v7.widget.CardView>
+                </androidx.cardview.widget.CardView>
 
-                <android.support.v7.widget.CardView
+                <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
+                    app:cardElevation="0dp"
                     android:layout_marginTop="15dp">
 
                     <ImageView
@@ -2616,7 +2765,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textColor="@color/purple"
-                        android:text="csc 403(2)"
+                        android:text="csc 403 (2)"
                         android:textAllCaps="true"
                         android:layout_marginTop="5dp"
                         android:layout_marginStart="50dp"
@@ -2627,7 +2776,8 @@
                         android:layout_height="wrap_content"
                         android:textStyle="bold"
                         android:textAllCaps="true"
-                        android:text="software engineering"
+                        android:textSize="12sp"
+                        android:text="@string/CSC403"
                         android:textColor="@color/blue"
                         android:layout_marginStart="50dp"
                         android:layout_gravity="bottom"
@@ -2644,11 +2794,12 @@
                         android:layout_gravity="end|center"
                         android:layout_marginEnd="20dp"/>
 
-                </android.support.v7.widget.CardView>
+                </androidx.cardview.widget.CardView>
 
-                <android.support.v7.widget.CardView
+                <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
+                    app:cardElevation="0dp"
                     android:layout_marginTop="15dp">
 
                     <ImageView
@@ -2662,7 +2813,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textColor="@color/purple"
-                        android:text="csc 407(2)"
+                        android:text="csc 407 (2)"
                         android:textAllCaps="true"
                         android:layout_marginTop="5dp"
                         android:layout_marginStart="50dp"
@@ -2673,7 +2824,8 @@
                         android:layout_height="wrap_content"
                         android:textStyle="bold"
                         android:textAllCaps="true"
-                        android:text="networks and communication"
+                        android:textSize="12sp"
+                        android:text="@string/CSC407"
                         android:textColor="@color/blue"
                         android:layout_marginStart="50dp"
                         android:layout_gravity="bottom"
@@ -2690,11 +2842,12 @@
                         android:layout_gravity="end|center"
                         android:layout_marginEnd="20dp"/>
 
-                </android.support.v7.widget.CardView>
+                </androidx.cardview.widget.CardView>
 
-                <android.support.v7.widget.CardView
+                <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
+                    app:cardElevation="0dp"
                     android:layout_marginTop="15dp">
 
                     <ImageView
@@ -2708,7 +2861,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textColor="@color/purple"
-                        android:text="csc 415(2)"
+                        android:text="csc 415 (2)"
                         android:textAllCaps="true"
                         android:layout_marginTop="5dp"
                         android:layout_marginStart="50dp"
@@ -2719,6 +2872,7 @@
                         android:layout_height="wrap_content"
                         android:textStyle="bold"
                         android:textAllCaps="true"
+                        android:textSize="12sp"
                         android:text="compiler construction 1"
                         android:textColor="@color/blue"
                         android:layout_marginStart="50dp"
@@ -2736,11 +2890,12 @@
                         android:layout_gravity="end|center"
                         android:layout_marginEnd="20dp"/>
 
-                </android.support.v7.widget.CardView>
+                </androidx.cardview.widget.CardView>
 
-                <android.support.v7.widget.CardView
+                <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
+                    app:cardElevation="0dp"
                     android:layout_marginTop="15dp">
 
                     <ImageView
@@ -2754,7 +2909,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textColor="@color/purple"
-                        android:text="csc 405(2)"
+                        android:text="csc 405 (2)"
                         android:textAllCaps="true"
                         android:layout_marginTop="5dp"
                         android:layout_marginStart="50dp"
@@ -2765,6 +2920,7 @@
                         android:layout_height="wrap_content"
                         android:textStyle="bold"
                         android:textAllCaps="true"
+                        android:textSize="12sp"
                         android:text="internet programming"
                         android:textColor="@color/blue"
                         android:layout_marginStart="50dp"
@@ -2782,11 +2938,12 @@
                         android:layout_gravity="end|center"
                         android:layout_marginEnd="20dp"/>
 
-                </android.support.v7.widget.CardView>
+                </androidx.cardview.widget.CardView>
 
-                <android.support.v7.widget.CardView
+                <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
+                    app:cardElevation="0dp"
                     android:layout_marginTop="15dp">
 
                     <ImageView
@@ -2800,7 +2957,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textColor="@color/purple"
-                        android:text="csc 409(2)"
+                        android:text="csc 409 (2)"
                         android:textAllCaps="true"
                         android:layout_marginTop="5dp"
                         android:layout_marginStart="50dp"
@@ -2811,6 +2968,7 @@
                         android:layout_height="wrap_content"
                         android:textStyle="bold"
                         android:textAllCaps="true"
+                        android:textSize="12sp"
                         android:text="performance and evaluation"
                         android:textColor="@color/blue"
                         android:layout_marginStart="50dp"
@@ -2828,11 +2986,12 @@
                         android:layout_gravity="end|center"
                         android:layout_marginEnd="20dp"/>
 
-                </android.support.v7.widget.CardView>
+                </androidx.cardview.widget.CardView>
 
-                <android.support.v7.widget.CardView
+                <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
+                    app:cardElevation="0dp"
                     android:layout_marginTop="15dp">
 
                     <ImageView
@@ -2846,7 +3005,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textColor="@color/purple"
-                        android:text="csc 417(2)"
+                        android:text="csc 417 (2)"
                         android:textAllCaps="true"
                         android:layout_marginTop="5dp"
                         android:layout_marginStart="50dp"
@@ -2874,11 +3033,12 @@
                         android:layout_gravity="end|center"
                         android:layout_marginEnd="20dp"/>
 
-                </android.support.v7.widget.CardView>
+                </androidx.cardview.widget.CardView>
 
-                <android.support.v7.widget.CardView
+                <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
+                    app:cardElevation="0dp"
                     android:layout_marginTop="15dp">
 
                     <ImageView
@@ -2892,7 +3052,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textColor="@color/purple"
-                        android:text="csc 423(2)"
+                        android:text="csc 423 (2)"
                         android:textAllCaps="true"
                         android:layout_marginTop="5dp"
                         android:layout_marginStart="50dp"
@@ -2903,6 +3063,7 @@
                         android:layout_height="wrap_content"
                         android:textStyle="bold"
                         android:textAllCaps="true"
+                        android:textSize="12sp"
                         android:text="project management "
                         android:textColor="@color/blue"
                         android:layout_marginStart="50dp"
@@ -2920,13 +3081,13 @@
                         android:layout_gravity="end|center"
                         android:layout_marginEnd="20dp"/>
 
-                </android.support.v7.widget.CardView>
+                </androidx.cardview.widget.CardView>
 
-                <android.support.v7.widget.CardView
+                <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
+                    app:cardElevation="0dp"
                     android:layout_marginTop="15dp">
-
 
                 <ImageView
                     android:layout_width="30dp"
@@ -2939,7 +3100,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textColor="@color/purple"
-                    android:text="csc 435(2)"
+                    android:text="csc 435 (2)"
                     android:textAllCaps="true"
                     android:layout_marginTop="5dp"
                     android:layout_marginStart="50dp"
@@ -2950,6 +3111,7 @@
                     android:layout_height="wrap_content"
                     android:textStyle="bold"
                     android:textAllCaps="true"
+                    android:textSize="12sp"
                     android:text="optimization techniques"
                     android:textColor="@color/blue"
                     android:layout_marginStart="50dp"
@@ -2966,14 +3128,14 @@
                     android:textSize="20sp"
                     android:layout_gravity="end|center"
                     android:layout_marginEnd="20dp"/>
-                </android.support.v7.widget.CardView>
+                </androidx.cardview.widget.CardView>
 
-                <android.support.v7.widget.CardView
+                <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="3dp"
                     android:layout_marginTop="10dp"
                     android:backgroundTint="@color/purple">
-                </android.support.v7.widget.CardView>
+                </androidx.cardview.widget.CardView>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -2986,7 +3148,8 @@
                         android:layout_height="wrap_content"
                         android:textStyle="bold"
                         android:layout_marginStart="10dp"
-                        android:text="400l rain semester"
+                        android:text="@string/FLRS"
+                        android:textSize="12sp"
                         android:textColor="@color/purple"
                         android:textAllCaps="true"
                         android:layout_gravity="start|center"/>
@@ -2996,7 +3159,7 @@
                         android:layout_height="30dp"
                         android:layout_gravity="center"
                         android:background="@drawable/text_view_shape"
-                        android:layout_marginStart="60dp"
+                        android:layout_marginStart="125dp"
                         android:textColor="@color/purple" />
 
                     <Button
@@ -3009,17 +3172,18 @@
 
                 </LinearLayout>
 
-                <android.support.v7.widget.CardView
+                <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="3dp"
                     android:layout_marginStart="10dp"
                     android:layout_marginEnd="10dp"
                     android:backgroundTint="@color/purple">
-                </android.support.v7.widget.CardView>
+                </androidx.cardview.widget.CardView>
 
-                <android.support.v7.widget.CardView
+                <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
+                    app:cardElevation="0dp"
                     android:layout_marginTop="15dp">
 
                     <ImageView
@@ -3033,7 +3197,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textColor="@color/purple"
-                        android:text="csc 402(2)"
+                        android:text="csc 402 (2)"
                         android:textAllCaps="true"
                         android:layout_marginTop="5dp"
                         android:layout_marginStart="50dp"
@@ -3044,6 +3208,7 @@
                         android:layout_height="wrap_content"
                         android:textStyle="bold"
                         android:textAllCaps="true"
+                        android:textSize="12sp"
                         android:text="computer centre management"
                         android:textColor="@color/blue"
                         android:layout_marginStart="50dp"
@@ -3060,11 +3225,12 @@
                         android:textSize="20sp"
                         android:layout_gravity="end|center"
                         android:layout_marginEnd="20dp"/>
-                </android.support.v7.widget.CardView>
+                </androidx.cardview.widget.CardView>
 
-                <android.support.v7.widget.CardView
+                <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
+                    app:cardElevation="0dp"
                     android:layout_marginTop="15dp">
 
                     <ImageView
@@ -3078,7 +3244,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textColor="@color/purple"
-                        android:text="csc 416(2)"
+                        android:text="csc 416 (2)"
                         android:textAllCaps="true"
                         android:layout_marginTop="5dp"
                         android:layout_marginStart="50dp"
@@ -3089,6 +3255,7 @@
                         android:layout_height="wrap_content"
                         android:textStyle="bold"
                         android:textAllCaps="true"
+                        android:textSize="12sp"
                         android:text="compiler construction 2"
                         android:textColor="@color/blue"
                         android:layout_marginStart="50dp"
@@ -3105,12 +3272,13 @@
                         android:textSize="20sp"
                         android:layout_gravity="end|center"
                         android:layout_marginEnd="20dp"/>
-                </android.support.v7.widget.CardView>
+                </androidx.cardview.widget.CardView>
 
 
-                <android.support.v7.widget.CardView
+                <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
+                    app:cardElevation="0dp"
                     android:layout_marginTop="15dp">
 
                     <ImageView
@@ -3124,7 +3292,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textColor="@color/purple"
-                        android:text="csc 482(2)"
+                        android:text="csc 482 (2)"
                         android:textAllCaps="true"
                         android:layout_marginTop="5dp"
                         android:layout_marginStart="50dp"
@@ -3135,7 +3303,8 @@
                         android:layout_height="wrap_content"
                         android:textStyle="bold"
                         android:textAllCaps="true"
-                        android:text="modelling and sumulation"
+                        android:textSize="12sp"
+                        android:text="modelling and simulation"
                         android:textColor="@color/blue"
                         android:layout_marginStart="50dp"
                         android:layout_gravity="bottom"
@@ -3151,12 +3320,13 @@
                         android:textSize="20sp"
                         android:layout_gravity="end|center"
                         android:layout_marginEnd="20dp"/>
-                </android.support.v7.widget.CardView>
+                </androidx.cardview.widget.CardView>
 
 
-                <android.support.v7.widget.CardView
+                <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
+                    app:cardElevation="0dp"
                     android:layout_marginTop="15dp">
 
                     <ImageView
@@ -3170,7 +3340,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textColor="@color/purple"
-                        android:text="csc 412(2)"
+                        android:text="csc 412 (2)"
                         android:textAllCaps="true"
                         android:layout_marginTop="5dp"
                         android:layout_marginStart="50dp"
@@ -3181,6 +3351,7 @@
                         android:layout_height="wrap_content"
                         android:textStyle="bold"
                         android:textAllCaps="true"
+                        android:textSize="12sp"
                         android:text="artificial intelligence"
                         android:textColor="@color/blue"
                         android:layout_marginStart="50dp"
@@ -3197,12 +3368,13 @@
                         android:textSize="20sp"
                         android:layout_gravity="end|center"
                         android:layout_marginEnd="20dp"/>
-                </android.support.v7.widget.CardView>
+                </androidx.cardview.widget.CardView>
 
 
-                <android.support.v7.widget.CardView
+                <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
+                    app:cardElevation="0dp"
                     android:layout_marginTop="15dp">
 
                     <ImageView
@@ -3216,7 +3388,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textColor="@color/purple"
-                        android:text="csc 499(6)"
+                        android:text="csc 499 (6)"
                         android:textAllCaps="true"
                         android:layout_marginTop="5dp"
                         android:layout_marginStart="50dp"
@@ -3227,6 +3399,7 @@
                         android:layout_height="wrap_content"
                         android:textStyle="bold"
                         android:textAllCaps="true"
+                        android:textSize="12sp"
                         android:text="project"
                         android:textColor="@color/blue"
                         android:layout_marginStart="50dp"
@@ -3243,12 +3416,13 @@
                         android:textSize="20sp"
                         android:layout_gravity="end|center"
                         android:layout_marginEnd="20dp"/>
-                </android.support.v7.widget.CardView>
+                </androidx.cardview.widget.CardView>
 
 
-                <android.support.v7.widget.CardView
+                <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
+                    app:cardElevation="0dp"
                     android:layout_marginTop="15dp">
 
                     <ImageView
@@ -3262,7 +3436,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textColor="@color/purple"
-                        android:text="csc 452(2)"
+                        android:text="csc 452 (2)"
                         android:textAllCaps="true"
                         android:layout_marginTop="5dp"
                         android:layout_marginStart="50dp"
@@ -3273,6 +3447,7 @@
                         android:layout_height="wrap_content"
                         android:textStyle="bold"
                         android:textAllCaps="true"
+                        android:textSize="12sp"
                         android:text="computer graphics 2"
                         android:textColor="@color/blue"
                         android:layout_marginStart="50dp"
@@ -3289,12 +3464,13 @@
                         android:textSize="20sp"
                         android:layout_gravity="end|center"
                         android:layout_marginEnd="20dp"/>
-                </android.support.v7.widget.CardView>
+                </androidx.cardview.widget.CardView>
 
 
-                <android.support.v7.widget.CardView
+                <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
+                    app:cardElevation="0dp"
                     android:layout_marginTop="15dp">
 
                     <ImageView
@@ -3308,7 +3484,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textColor="@color/purple"
-                        android:text="csc 414(2)"
+                        android:text="csc 414 (2)"
                         android:textAllCaps="true"
                         android:layout_marginTop="5dp"
                         android:layout_marginStart="50dp"
@@ -3319,7 +3495,8 @@
                         android:layout_height="wrap_content"
                         android:textStyle="bold"
                         android:textAllCaps="true"
-                        android:text="installation and maintenance"
+                        android:textSize="12sp"
+                        android:text="installation and maintainance"
                         android:textColor="@color/blue"
                         android:layout_marginStart="50dp"
                         android:layout_gravity="bottom"
@@ -3335,13 +3512,7 @@
                         android:textSize="20sp"
                         android:layout_gravity="end|center"
                         android:layout_marginEnd="20dp"/>
-                </android.support.v7.widget.CardView>
-
-
-
-
-
-
+                </androidx.cardview.widget.CardView>
 
             </LinearLayout>
 
