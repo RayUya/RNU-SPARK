@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FoodMenuPage"
+    android:background="@color/grey">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:textSize="12sp"
+                android:text="@string/scroll"
+                android:textStyle="bold"/>
+
+            <TextView
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:text="main course"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:background="@color/purple" />
+
+    <CheckBox
+        android:id="@+id/WRTS"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:text="White Rice and Tomoto Stew"/>
+    <CheckBox
+        android:id="@+id/WRCS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="White Rice and Chicken Sauce"/>
+    <CheckBox
+        android:id="@+id/JR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Jollof Rice"/>
+    <CheckBox
+        android:id="@+id/ESY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Egg Stew with Yam"/>
+    <CheckBox
+        android:id="@+id/Spag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Spaghetti"/>
+    <CheckBox
+        android:id="@+id/PSE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pancake and Scramble Egg"/>
+    <CheckBox
+        android:id="@+id/BP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Beans Porridge"/>
+
+            <CheckBox
+        android:id="@+id/Abacha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Abacha"/>
+    <CheckBox
+        android:id="@+id/Salad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Salad"/>
+    <CheckBox
+        android:id="@+id/FP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fried Plantain"/>
+    <CheckBox
+        android:id="@+id/YFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yam and Fio Fio"/>
+    <CheckBox
+        android:id="@+id/CR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Coconut Rice"/>
+    <CheckBox
+        android:id="@+id/ESauceY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Egg Sauce with Yam"/>
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:text="soups/sauce"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/white"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:background="@color/purple" />
+
+            <CheckBox
+                android:id="@+id/EGUSI"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Egusi Soup"/>
+            <CheckBox
+                android:id="@+id/VEGETABLE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Vegetable Soup"/>
+            <CheckBox
+                android:id="@+id/OGBONO"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Ogbono Soup"/>
+            <CheckBox
+                android:id="@+id/OKRO"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Okro Soup"/>
+            <CheckBox
+                android:id="@+id/OHA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Oha Soup"/>
+            <CheckBox
+                android:id="@+id/OFE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ofe Akwu"/>
+            <CheckBox
+                android:id="@+id/BANGA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Banga"/>
+            <CheckBox
+                android:id="@+id/STEW"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stew"/>
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:text="daily protein"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/white"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:background="@color/purple" />
+
+            <CheckBox
+                android:id="@+id/MOI_MOI"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Moi Moi"/>
+            <CheckBox
+                android:id="@+id/CHICKEN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Chicken"/>
+            <CheckBox
+                android:id="@+id/BEEF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Beef"/>
+            <CheckBox
+                android:id="@+id/F.FISH"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fried fish"/>
+            <CheckBox
+                android:id="@+id/EGG"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bioled Egg"/>
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:text="snacks"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/white"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:background="@color/purple" />
+
+            <CheckBox
+                android:id="@+id/F.ROLL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Fish Roll"/>
+            <CheckBox
+                android:id="@+id/DOUGHNUT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Doughnut"/>
+            <CheckBox
+                android:id="@+id/CHIN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Chin Chin"/>
+            <CheckBox
+                android:id="@+id/PIE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Meat Pie"/>
+            <CheckBox
+                android:id="@+id/PUFF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Puff Puff"/>
+
+            <CheckBox
+                android:id="@+id/BREAD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bread Roll"/>
+            <CheckBox
+                android:id="@+id/C.BISCUIT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Coconut Biscuuit"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:textSize="12sp"
+                android:text="@string/nb1"
+                android:textStyle="bold"/>
+
+            <CheckBox
+                android:id="@+id/delivery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Hostel Delivery"/>
+
+
+            <TextView
+                android:id="@+id/total"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/purple"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/place_order_btn"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp"
+                android:textStyle="bold"
+                android:background="@drawable/login_page_button"
+                android:text="place order"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textAllCaps="true"
+                android:textColor="@color/white"/>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
