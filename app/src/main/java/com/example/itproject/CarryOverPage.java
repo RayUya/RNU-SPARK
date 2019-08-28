@@ -1,0 +1,13 @@
+package com.example.itproject;
+
+import androidx.appcompat.app.AppCompatActivity;
+import android.os.Bundle;
+
+public class CarryOverPage extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_carry_over_page);
+    }
+}

@@ -1,0 +1,225 @@
+<resources>
+    <string name="label_name">RNU/CSC/TR2016/0004</string>
+    <string name="app_name">RNU SPARK</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">UYA .O. UYA</string>
+    <string name="nav_header_subtitle">Computer Science</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="H1">Surname</string>
+    <string name="H2">Other Names</string>
+    <string name="H3">Last Name</string>
+    <string name="H4">Department</string>
+    <string name="H5">Faculty</string>
+    <string name="H6">Registration Number</string>
+    <string name="H7">Student ID</string>
+    <string name="H8">Password</string>
+
+    <string name="this_month">This Month</string>
+    <string name="this_year">This Year</string>
+    <string name="this_week">This Week</string>
+    <string name="monday">mon</string>
+    <string name="tuesday">tue</string>
+    <string name="wednesday">wed</string>
+    <string name="thursday">thu</string>
+    <string name="friday">fri</string>
+    <string name="saturday">sat</string>
+    <string name="sunday">sun</string>
+
+    <string name="forgot_password">Forgot Password? Click here!</string>
+    <string name="version">Version 3.1.1</string>
+    <string name="developers_name">Designed By Uya</string>
+    <string name="my_email">meals555i@gmail.com</string>
+    <string name="my_name">Uya Okon Uya</string>
+
+    <string name="planner">Planner</string>
+    <string name="add_course">Add Course</string>
+    <string name="show_schedule">Show Schedule</string>
+    <string name="creds_limit">Credit Limit Min = 2, Max = 24</string>
+    <string name="courses">5 courses</string>
+    <string name="start_credits">14 credits</string>
+    <string name="csc403">csc 403</string>
+    <string name="SE">software engineering</string>
+    <string name="godwin">mr. godwin</string>
+    <string name="csc407">csc 407</string>
+    <string name="NAC">networks and communication</string>
+    <string name="tochukwu">mr. tochukwu</string>
+    <string name="csc415">csc 415</string>
+    <string name="CC">compiler construction</string>
+    <string name="HOD">mr. egwuchukwu ani</string>
+    <string name="csc405">csc 405</string>
+    <string name="IP">internet programming</string>
+    <string name="ifeanyi">mr. ifeanyi</string>
+    <string name="csc409">csc 409</string>
+    <string name="PE">performance and evaluation</string>
+
+    <string name="image">image</string>
+
+    <string name="amount"> %1$d Naira</string>
+    <string name="nb1">N/B: If you want more than 1 quantity, visit the caf</string>
+    <string name="scroll">N/B: Scroll down after selecting to place your order</string>
+
+    <string name="R1">Phone Number</string>
+    <string name="R2">Phone Number</string>
+    <string name="RNULOGO">University Logo</string>
+    <string name="REG_NO">RNU/CSC/TR/2016/0004</string>
+
+    <string name="about_rnu">Renaissance University is a private university licensed by the Federal Government of Nigeria in 2005. Its main campus is located in Ugbawka, Enugu State, Nigeria.</string>
+    <string name="location">Renaissance University is located in Ugbawka (off Enugu-Port Harcourt Express Road en route Ebonyi State) in Nkanu East Local Government Area of Enugu State in Igboland. The campus can be reached within 30 minutes by road from the capital city of Enugu. It is about an hour drive from Abia State University (Uturu), Ebonyi State University (Abakaliki) and the University of Nigeria (Nsukka). The commercial cities of Aba and Port Harcourt are between two hours and two and a half hours drive away. It is one of two universities located in Nkanuland of Enugu State. The other is the Enugu State University of Science and Technology (ESUT) - the first state university of technology in Nigeria, located at Agbani.
+    </string>
+    <string name="school_name">renaissance university</string>
+    <string name="application_name">rnu spark</string>
+    <string name="my_department_name">department of computer science</string>
+    <string name="nokybaba_news">veteran comedian nokybaba turns his show into a school party as students failed to buy tickets and turn up for the event</string>
+    <string name="cot_news">chapel of transformation marks their 3 days straight prayer week tagged prayer cruise with manifestations of the spirit with power available through prayer</string>
+    <string name="sug_news">the annual rnu sug week is forthcoming with lots of suspense as to new positions in the sug offices and who will be the new face of rnu</string>
+
+    <string name="CGPA">3.87</string>
+    <string name="credits">70</string>
+    <string name="title_activity_tabbed">TabbedActivity</string>
+    <string name="tab_text_1">Academic Record</string>
+    <string name="tab_text_2">Class Schedule</string>
+    <string name="tab_text_3">Carry Overs</string>
+
+    <string name="phd">phd holder</string>
+    <string name="masters">masters degree holder</string>
+    <string name="bsc">bsc holder</string>
+    <string name="prof">professor</string>
+    <string name="aprof">associate professor</string>
+    <string name="corp">youth corper</string>
+    <string name="call">call</string>
+    <string name="text">text</string>
+
+    <string name="owner">senator chimaroke nnamani</string>
+    <string name="own">owner</string>
+    <string name="pro_chancellor">Achbishop chukwuma</string>
+    <string name="bishop">pro chancellor</string>
+    <string name="vc">Professor Nkem Chinedu Awujo</string>
+    <string name="vc_vname">vice chancellor</string>
+    <string name="locate">location</string>
+
+    <string name="college">Colleges</string>
+    <string name="col_no">The University has three (3) colleges</string>
+    <string name="nas">College of Natural and Applied Sciences</string>
+    <string name="mcb">Microbiology</string>
+    <string name="bcm">Biochemistry</string>
+    <string name="ic">Industrial Chemistry</string>
+    <string name="csc">Computer Science</string>
+    <string name="ip">Industrial Physics</string>
+    <string name="cmass">College of Management and Social Sciences</string>
+    <string name="eco">Economics</string>
+    <string name="mass_comm">Mass Communication</string>
+    <string name="bus">Business Administration</string>
+    <string name="acc">Accountancy</string>
+    <string name="hir">History and Int. Relations</string>
+    <string name="psy">Pyschology</string>
+    <string name="psc">Political Science</string>
+    <string name="baf">Banking and Finance</string>
+    <string name="law">College of law</string>
+
+    <string name="grades">Grades</string>
+    <string name="course_registration">Course Registration</string>
+    <string name="class_schedule">Class Schedule</string>
+    <string name="events">Events</string>
+    <string name="about">About</string>
+    <string name="lecturers">Lecturers</string>
+    <string name="course_mates">Coursemates</string>
+    <string name="students">Students</string>
+
+    <string name="enroll">Renaissance University enrolls new students into the University</string>
+    <string name="defence">All 300 Level students defend their SIWES attachment over the course of 6 months</string>
+
+    <string name="HLHS">100L harmattan semester</string>
+    <string name="GST101">use of english 1</string>
+    <string name="GST103">logic and philosophy</string>
+    <string name="GST105">citizenship education 1</string>
+    <string name="CSC101">computer and information</string>
+    <string name="PHY101">general physics 1</string>
+    <string name="MAT101">general mathematics 1</string>
+    <string name="CHM101">introduction to chemistry</string>
+    <string name="BIO101">general biology 1</string>
+    <string name="STA101">introduction to statistics 1</string>
+
+    <string name="HLRS">100l rain semester</string>
+    <string name="GST102">use of english 2</string>
+    <string name="GST104">history and philosophy</string>
+    <string name="GST108">citizenship education 2</string>
+    <string name="CSC102">computer programming 1</string>
+    <string name="MAT102">general mathematics 2</string>
+    <string name="MAT104">general mathematics 3</string>
+    <string name="BIO102">general biology 2</string>
+    <string name="PHY102">general physics 2</string>
+    <string name="STA102">introduction to statistics 2</string>
+
+    <string name="TLHS2">200l harmattan semester</string>
+    <string name="GST203">communication skills</string>
+    <string name="GST205">entrepreneurial development 1</string>
+    <string name="CSC201">computer programming 2</string>
+    <string name="CSC205">operating systems 1</string>
+    <string name="GST201">peace and conflict resolution</string>
+    <string name="MAT201">mathematical methods</string>
+    <string name="MAT203">linear algrebra 1</string>
+    <string name="STA203">statistical analysis 1</string>
+    <string name="PHY201">electronics</string>
+
+    <string name="TLRS2">200l rain semester</string>
+    <string name="CSC202">structured programming</string>
+    <string name="CSC212">computer hardware</string>
+    <string name="CSC204">fundamental of data structures</string>
+    <string name="CSC214">computer architecture</string>
+    <string name="CSC216">data management 2</string>
+    <string name="MAT202">elementary differential equation</string>
+    <string name="MAT204">linear algebra 2</string>
+    <string name="STA204">statistics for physical sciences 2</string>
+    <string name="GST204">entrepreneurial development 2</string>
+
+    <string name="TLHS3">300l harmattan semester</string>
+    <string name="CSC301">assembly language programming</string>
+    <string name="CSC311">oop java</string>
+    <string name="CSC305">operating systems 2</string>
+    <string name="CSC307">data management 2</string>
+    <string name="CSC315">computer architecture 2</string>
+    <string name="CSC312">system analysis and design</string>
+    <string name="CSC331">operations research</string>
+    <string name="CSC303">digital computer logic</string>
+
+    <string name="TLRS3">300l rain semester</string>
+    <string name="CSC399">industrial training</string>
+    <string name="FLHS">400l harmattan semester</string>
+    <string name="FLRS">400l rain semester</string>
+    <string name="CSC403">software engineering</string>
+    <string name="CSC407">networks and communication</string>
+
+    <string-array name="Faculties">
+        <item>Law</item>
+        <item>Natural and Applied Sciences</item>
+        <item>Management and Social Sciences</item>
+    </string-array>
+
+    <string-array name="Departments">
+        <item>None</item>
+        <item>Microbiology</item>
+        <item>Biochemistry</item>
+        <item>Computer Science</item>
+        <item>Industrial Physics</item>
+        <item>Economics</item>
+        <item>Mass Communication</item>
+        <item>Business Administration</item>
+        <item>Accountancy</item>
+        <item>History and International Relations</item>
+        <item>Psychology</item>
+        <item>Political Science</item>
+        <item>Banking and Finance</item>
+    </string-array>
+
+    <string-array name="Levels">
+        <item>100</item>
+        <item>200</item>
+        <item>300</item>
+        <item>400</item>
+    </string-array>
+
+</resources>

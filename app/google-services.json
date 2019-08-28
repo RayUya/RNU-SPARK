@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "722800244046",
+    "firebase_url": "https://rnu-spark.firebaseio.com",
+    "project_id": "rnu-spark",
+    "storage_bucket": "rnu-spark.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:722800244046:android:0638280800429e19",
+        "android_client_info": {
+          "package_name": "com.example.itproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "722800244046-a0tp1cq1gf4lo6039l85tp6lgkv1ndv3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.itproject",
+            "certificate_hash": "18bf7e0253bcf3bfa65db11311c0dd0a8f9d29c2"
+          }
+        },
+        {
+          "client_id": "722800244046-09bnsjvucn8lp1jat1atcvlf1fk2ogi0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMCpeb1LkxpvNOvzDeNQB8qahBGg9duU0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "722800244046-09bnsjvucn8lp1jat1atcvlf1fk2ogi0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
